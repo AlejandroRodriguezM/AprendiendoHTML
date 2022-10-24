@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <h2>Ejercicio 1</h2>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
+        <table>
+            <tr>
+
+                <td><label for="nombre">Nombre</label></td>
+                <td><input type="text" name="nombre" id="nombre" pattern="[A-Za-z]{5,50}" autofocus required></td>
+            </tr>
+            <tr>
+                <td><label for="apellido">Apellidos</label></td>
+                <td><input type="text" name="apellido" id="apellido" pattern="[A-Za-z ]{5,}" required></td>
+            </tr>
+            <tr>
+                <td><label for="edad">Edad</label></td>
+                <td> <input type="text" name="edad" id="edad" pattern="[0-9]{1,100}" required></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Contraseña</label></td>
+                <td><input type="password" name="pass" id="pass" size="5"></td>
+            </tr>
+            <tr>
+                <td><input type="hidden" name="control" value="edad"></td>
+            </tr>
+        </table>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+        <input type="button" value="Botón">
+        <input type="image" src="img/imagen.jpg" alt="imagen">
+        <input type="checkbox" name="check" id="check">
+        <input type="radio" name="radio" id="radio">
+        <input type="file" name="file" id="file">
+        <input type="color" name="color" id="color">
+        <input type="date" name="date" id="date">
+        <input type="datetime-local" name="datetime-local" id="datetime-local">
+        <input type="email" name="email" id="email">
+        <input type="month" name="month" id="month">
+        <input type="number" name="number" id="number">
+        <input type="range" name="range" id="range">
+
+    </form>
+
+</body>
+
+</html>
