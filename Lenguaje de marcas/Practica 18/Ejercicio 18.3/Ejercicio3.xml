@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Ejercicio3.xsl"?>
+<libreria>
+
+    <libro>
+    <portada>imagenes/portada1.jpg</portada>
+        <titulo>Physics-based animation</titulo>
+        <autor>Kenny Erleben</autor>
+        <editor>Charles River Media</editor>
+        <isbn>978-1584593804</isbn>
+        <precio>50.06</precio>
+        <numpaginas>220</numpaginas>
+    </libro>
+
+    <libro>
+    <portada>imagenes/portada2.jpg</portada>
+        <titulo>Principios de seguridad informática</titulo>
+        <autor>Carlos Garre</autor>
+        <editor>Dykinson </editor>
+        <isbn>978-4614593407</isbn>
+        <precio>13.06</precio>
+        <numpaginas>195</numpaginas>
+    </libro>
+
+    <libro>
+    <portada>imagenes/portada3.jpg</portada>
+        <titulo>Javascript y jQuery</titulo>
+        <autor>Jon Duckett</autor>
+        <editor>Gingko Press</editor>
+        <isbn>978-8466360887</isbn>
+        <precio>4.89</precio>
+        <numpaginas>504</numpaginas>
+    </libro>
+
+    <libro>
+    <portada>imagenes/portada4.jpg</portada>
+        <titulo>Desarrollo web ágil con Rails</titulo>
+        <autor>Peachpit Press</autor>
+        <editor>Dykinson </editor>
+        <isbn>978-8499650383</isbn>
+        <precio>6.57</precio>
+        <numpaginas>408</numpaginas>
+    </libro>
+
+    <libro>
+    <portada>imagenes/portada5.jpg</portada>
+        <titulo>Mistborn</titulo>
+        <autor>Brandom Sanderson</autor>
+        <editor>Pingüin</editor>
+        <isbn>978-8499650413</isbn>
+        <precio>8.05</precio>
+        <numpaginas>408</numpaginas>
+    </libro>
+
+</libreria>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro RM</title>
+</head>
+<body>
+<h1>Ejercicio 02-09a</h1>
+    <h1> Formulario. Ejercicio 5 </h1>
+    <form action="" method="get">
+        <label for="nombre">Escriba su nombre</label>
+        <input type="text" pattern="[A-Z-a-z]" name="nombre" autofocus id="nombre" required><br>
+
+        <label for="apellidos">Escriba sus apellidos</label>
+        <input type="text" pattern="[A-Z-a-z]" name="apellidos" id="apellidos" required><br>
+        
+        <label for="edad">Escriba su edad</label>
+        <input type="hidden" pattern="[0-9]" name="edad" id="edad" value="edad" required><br>
+        
+        <label for="contraseña">Escriba la contraseña</label>
+        <input type="password" name="contraseña" id="contraseña" maxlength="5" size="5"><br>
+     </form>
+
+
+     <h1> Formulario. Ejercicio 7 </h1>
+     <form action="" method="get">
+        <label for="nombre">Escriba su nombre</label>
+        <input type="text" pattern="[A-Z-a-z]" name="nombre"><br><br>
+
+        <label for="edad">Señale su rango de edad</label><br>
+        <input type="radio" name="edad" value="menor">menor de edad<br>
+        <input type="radio" name="edad" value="adulto">entre 18 y 40<br>
+        <input type="radio" name="edad" value="mayor">entre 41 y 60<br>
+        <input type="radio" name="edad" value="mayor">más de 61 años<br><br>
+
+        <label for="estado">Situación familiar</label><br>
+        <label for="tr">Trabajando</label>
+        <input type="checkbox" name="Trabajando" id="Trabajando" value="Trabajando"><br>
+
+        <label for="de">Desempleado</label>
+        <input type="checkbox" name="Desempleado" id="Desempleado" value="Desempleado"><br>
+
+        <label for="sn">Sin ayuda ni prestación</label>
+        <input type="checkbox" name="Sin" id="Sin" value="Sin"><br>
+
+        <label for="edad">Elija el archivo</label><br>
+        <input type="file" name="archivo">
+        <input type="submit" value="enviar"><br>
+    
+     </form>
+
+     <h1> Formulario. Ejercicio 8 </h1>
+     <table style="border: 2px solid red; width: 40%; margin-left: 100px;">
+        <tr>
+            <td>
+                <form action="" method="get">
+        <label for="nombre">Escriba su nombre: </label>
+        <input type="text" pattern="[A-Z-a-z]" name="nombre"><br><br>
+
+        <label for="apellidos">Escriba sus apellidos: </label>
+        <input type="text" pattern="[A-Z-a-z]" name="ap" id="ap" required><br>
+
+        <label for="sexo">Señale su sexo: </label><br>
+        <input type="radio" id="hombre" name="sexo" value="hombre">
+        <label for="hombre">Hombre</label><br>
+        <input type="radio" id="mujer" name="sexo" value="mujer">
+        <label for="mujer">Mujer</label><br><br>
+
+        <input type="submit" value="enviar" >
+                </form>
+           </td>
+        </tr>
+     </table>
+
+
+     <h1> Formulario. Ejercicio 9 </h1>
+
+     <form action="" method="get">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nom" id="nom"><br><br>
+
+        <label for="apellidos">Apellidos: </label>
+        <input type="text" name="ape" id="ape"><br>
+
+        <label for="num">Número de personas: </label>
+        <input type="number" name="num" id="num" min="1" max="10" step="1"><br>
+
+        <label for="tlf">Número de teléfono: </label>
+        <input type="tel" name="tf" id="tf"><br>
+
+        <label for="email">Correo electrónico: </label>
+        <input type="email" name="email" id="email"><br>
+
+        <label for="fecha">Fecha: </label>
+        <input type="date" name="fecha" id="fecha"><br>
+
+        <label for="hora">Hora: </label>
+        <input type="time" name="hora" id="hora"><br>
+     </form>
+    
+
+    
+     <h1> Formulario. Ejercicio 10 </h1>
+
+   <form action="" method="get">
+      <label for="nombre">Nombre: </label>
+        <input type="text" name="nom"><br><br>
+
+        <label for="apellidos">Apellidos: </label>
+        <input type="text" name="ape"><br>
+
+        <label for="tlf">Número de teléfono: </label>
+        <input type="tel" name="tf"><br>
+
+        <label for="muestrario">Color:</label>
+        <input type="color" value="#ff0000" id="muestrario">
+
+        <label for="rango">Contraste</label>
+        <input type="range" value="10" min="1" max="50">
+    
+        <label for="rango">Brillo</label>
+        <input type="range" value="10" min="1" max="60">
+   </form>
+
+
+      <h1> Formulario. Ejercicio 11 </h1>
+   <form action="" method="get">
+
+      <label for="nombre">Escriba su nombre: </label>
+      <input type="text" pattern="[A-Z-a-z]" name="nombre"><br><br>
+
+      <label for="apellidos">Escriba sus apellidos: </label>
+      <input type="text" pattern="[A-Z-a-z]" name="ap"><br>
+
+      <label for="sexo">Señale su sexo: </label><br>
+      <input type="radio" id="h" name="sexo" value="hombre">
+      <label for="hombre">Hombre</label><br>
+      <input type="radio" id="m" name="sexo" value="mujer">
+      <label for="mujer">Mujer</label><br><br>
+
+      <table style="width: 80%; margin-left: auto; margin-right: auto;border: red 1px solid;">
+         <tr>
+            <td colspan="3" style= "border:1px solid saddlebrown; text-align: center; font-size: 25px;"><strong>Escoge el sistema de envío</strong></td>
+         </tr>
+         <tr>
+            <td style= "border:1px solid rgb(228, 105, 17); text-align: center;"><label for="homepage">Añade la página a enviar el formulario:</label>
+                  <input type="url" id="homepage" name="homepage"></td>
+            <td style= "border:1px solid rgb(17, 111, 189); text-align: center;"><input type="file" name="archivosubido">
+               <input type="submit" value="Enviar datos"></td>
+            <td style= "border:1px solid rgb(189, 17, 137); text-align: center;"><label for="gsearch">Búsqueda en google:</label>
+               <input type="search" id="gsearch" name="gsearch"></td>
+         </tr>
+         <tr>
+            <td colspan="3" style= "border:1px solid rgb(182, 228, 17); text-align: center;"><input type="submit" value="Enviar datos"></td>
+         </tr>
+      </table>
+
+
+      
+
+     
+
+
+   </form>
+
+
+
+
+</body>
+</html>

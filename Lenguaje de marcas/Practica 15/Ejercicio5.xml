@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Por Alejandro Rodriguez Mena-->
+<!--El siguiente documento XML ("forma_geometrica.xml") está bien formado. Sin
+embargo, no es válido. Para que lo sea, realizar los cambios necesarios en la DTD
+interna de dicho documento. -->
+
+<!-- El ejercicio nos da esto:
+<!ELEMENT forma_geometrica (nombre | caracteristicas | numero_de_lados)>
+ <!ELEMENT nombre (#PCDATA)>
+ <!ELEMENT color (#PCDATA)>
+ <!ELEMENT tipo (#PCDATA)>
+ <!ELEMENT numero_de_lados (#PCDATA)>
+]> -->
+
+
+<!--Ejercicio modificado para que sea correcto.-->
+<!DOCTYPE forma_geometrica [
+<!ELEMENT forma_geometrica (nombre, caracteristicas, numero_de_lados)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT caracteristicas (color, tipo)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT numero_de_lados (#PCDATA)>
+]>
+
+<forma_geometrica>
+<nombre>rombo</nombre>
+    <caracteristicas>
+        <color>naranja</color>
+        <tipo>plana</tipo>
+    </caracteristicas>
+<numero_de_lados>4</numero_de_lados>
+</forma_geometrica>

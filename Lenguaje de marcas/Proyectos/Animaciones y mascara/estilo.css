@@ -1,0 +1,728 @@
+body {
+  background-image: url(./img/fondo3.jpg);
+  font-family: Tahoma, sans-serif;
+  color: #5d5e62;
+  width: 1510px;
+  margin: auto;
+}
+
+/* Cabecera */
+header {
+  background-image: url(./img/fondoheader.jpg);
+  border-radius: 15px;
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;  
+  height: 290px;
+  width: 1490px;
+  margin: 15px;
+  margin-bottom: -22px;
+}
+
+/*Mascara jugadores*/
+.mask1 {
+  width: 1100px;
+  height: 300px;
+  -webkit-mask-image: url(./img/sport.png);
+  mask-image: url(./img/sport.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat; 
+
+}
+
+#mask1 {
+  -webkit-mask-image: url(./img/sport.png);
+  mask-image: url(./img/sport.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat; 
+  width: 1100px;
+  height: 300px;
+}
+
+/*Barra de menu*/
+.barra {
+  margin: 15px;
+  width: 1510px;
+  background-color: #25262e;
+  border-radius: 15px;
+}
+/*Botones del menu*/
+.botones{
+  width: 550px;
+  font-size: 20px;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+:root {
+  --transition-duration: 0.3s;
+  --transition-delay: 0.2s;
+}
+
+.bordes {
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  color: #dd4b39;
+}
+
+.menu .contenido {
+  margin-right: 10px;
+}
+
+.menu .bordes {
+  right: 40px;
+  width: 85px;
+  position: relative;
+  display: block;
+  padding: 15px;
+  border-radius: 5px;
+  background-image: url(./img/fondo2.jpg);
+}
+
+.menu .border {
+  position: absolute;
+  left: 0;
+  background: yellow;
+  transition: transform var(--transition-duration) ease-in-out;
+}
+
+.menu .border-top,
+.menu .border-bottom {
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+}
+
+.menu .border-left,
+.menu .border-right {
+  width: 1px;
+  height: 100%;
+  transform: scaleY(0);
+}
+
+.menu .border-top,
+.menu .border-left,
+.menu .border-right {
+  top: 0;
+}
+
+.menu .border-bottom {
+  bottom: 0;
+  transform-origin: bottom right;
+}
+
+.menu .border-top {
+  transform-origin: top left;
+}
+
+.menu .border-left {
+  transform-origin: bottom left;
+}
+
+.menu .border-right {
+  left: auto;
+  right: 0;
+  transform-origin: top right;
+}
+
+.menu .bordes:hover .border-top,
+.menu .bordes:hover .border-bottom {
+  transform: scaleX(1);
+}
+
+.menu .bordes:hover .border-left,
+.menu .bordes:hover .border-right {
+  transform: scaleY(1);
+}
+
+.menu .bordes:hover .border-right {
+  transition-delay: var(--transition-delay);
+}
+
+.menu .bordes:hover .border-bottom {
+  transition-delay: calc(var(--transition-delay) * 2);
+}
+
+.menu .bordes:hover .border-left {
+  transition-delay: calc(var(--transition-delay) * 3);
+}
+
+
+/* Animaciones de los botones
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.menu[data-animation="diagonal"] .border-left {
+  transform-origin: top left;
+}
+
+.menu[data-animation="diagonal"] .border-right,
+.menu[data-animation="diagonal"] .border-bottom {
+  transform-origin: bottom right;
+}
+
+.menu[data-animation="diagonal"] a:hover [class^=border]{
+  transition-delay: 0s;
+}
+
+/*Barra buscador*/
+.search input[type=text]{
+  position: absolute;
+  width:300px;
+  height:10px;
+  border-radius:25px;
+  border: none;
+  margin-left: 1170px;
+  margin-top: 5px;
+}
+
+.search .busqueda{
+  width:40px;
+  height:40px;
+  position: absolute;
+  display: block;
+  border-radius:25px;
+  color: #f2f2f2;
+  padding: 5px 10px;
+  margin-left: 1120px;
+  font-size: 12px;
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/*Div principal*/
+.contenedor {
+  margin-top: -15px;
+}
+
+.contenedor .info {
+  border: 3px solid #a6a7f1;
+  border-radius: 5px;
+}
+
+h2 {
+  margin: 0;
+  background-color: #7aa1a7;
+  padding: 5px;
+  color: white;
+  letter-spacing: 5px;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  text-align: center;
+  font-size: 2em;
+}
+
+/* Articulos */
+article {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  color: white;
+  width: 1510px;
+  height: 560px;
+  margin: 15px;
+  border: #cbd8d2 6px solid;
+  border-radius: 12px;
+background-color: #121315;
+
+  
+}
+
+article > h3 {
+  width: 1509px;
+  height: 30px;
+  border-radius: 8px;
+  margin: 0px;
+  padding: 1px;
+  background-color: #98bac7;
+  letter-spacing: 5px;
+  font-family: Staatliches, sans-serif;
+  color: #323c64;
+  font-weight: bold;
+}
+
+/*Imagenes*/
+figure {
+  float: left;
+}
+
+figure img {
+  width: 350px;
+  height: 210px;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 14px;
+  text-align: left;
+  margin: 20px 0px;
+  width: 300px;
+}
+
+
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* PIE DE PAGINA */
+footer {
+
+  background-color: #121315;
+  color: #a7a7a7;
+  font-size: 16px;
+}
+
+/*POSICIONAMIENTO PIE DE PAGINA*/
+footer {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  width: 1510px;
+}
+.row {
+  padding: 1em 1em;
+}
+.row.primary {
+  margin-left: 15px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  align-items: stretch;
+}
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+h3 {
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-size: 1.4em;
+  white-space: nowrap;
+}
+.pie {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.ContenidoPie:not(:first-child) {
+  margin-top: 0.8em;
+}
+.pie .ContenidoPie a {
+  color: #a7a7a7;
+  text-decoration: none;
+}
+.pie  a:hover {
+  color: #2a8ded;
+}
+.about p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+}
+
+input {
+  font-size: 1em;
+  padding: 1em;
+  width: 313px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.sub {
+  font-size: 1em;
+  padding: 1em;
+  width: 350px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  background-color: #c7940a;
+  color: #ffffff;
+}
+
+
+.copyright {
+  padding: 0.3em 1em;
+  background-color: #25262e;
+}
+.footer-menu{
+  float: left;
+    margin-top: 10px;
+}
+
+.footer-menu a{
+  color: #cfd2d6;
+  padding: 6px;
+
+  text-decoration: none;
+}
+.footer-menu a:hover{
+  color: #27bcda;
+}
+.copyright p {
+  font-size: 0.9em;
+  text-align: right;
+}
+
+/*Botones redes sociales*/
+#redessociales {
+  margin: 10px 0px 0px 0px;
+  border: 5px solid #FFFF00;
+  width: 64px;
+  height: 64px;
+  border-radius: 75px;
+  background: url(https://4.bp.blogspot.com/-gKMIOgeaEBY/UWHsOA382oI/AAAAAAAABpI/5GdyRTAeKII/s1600/share_core_square.jpg);
+  background-position: center;
+}
+
+.smedia {
+  position: absolute;
+  -webkit-transition: left 0.5s cubic-bezier(0.1,0.8,0.9,1), opacity 1s linear;
+  -moz-transition: left 0.5s cubic-bezier(0.1,0.8,0.9,1),opacity 1s linear;
+  -o-transition: left 0.5s cubic-bezier(0.1,0.8,0.9,1), opacity 1s linear;
+  transition: left 0.5s cubic-bezier(0.1,0.8,0.9,1), opacity 1s linear;
+  opacity: 0;
+  width: 46px;
+  height: 46px;
+  margin: 5px -5px 0px 230px;
+  text-indent: -9999px;
+  background: no-repeat;
+  left:6px;
+}
+
+#redessociales:hover .smedia {
+  opacity: 1;
+  transform: translate(0px,0);
+  -webkit-transform: translate(0px,0);
+  -o-transform: translate(0px,0);
+  -moz-transform: translate(0px,0);
+  margin: 5px -5px 0px 230px;
+  position: absolute;
+}
+#redessociales:hover .smedia:nth-child(1) {
+  position: absolute;
+  left:65px;
+}
+
+#redessociales:hover .smedia:nth-child(2) {
+  position: absolute;
+  left:110px;
+}
+#redessociales:hover .smedia:nth-child(3) {
+  position: absolute;
+  left:155px;
+}
+#redessociales:hover .smedia:nth-child(4) {
+  position: absolute;
+  left:200px;
+}
+#redessociales:hover .smedia:nth-child(5) {
+  position: absolute;
+  left:245px;
+}
+
+#redessociales:hover .smedia:nth-child(6) {
+  position: absolute;
+  left:290px;
+}
+
+.smedia.facebook {
+    background: url(https://4.bp.blogspot.com/-49s_0_9mdVo/UWHsMIvJBNI/AAAAAAAABn8/6bVMlN4Qz7Y/s1600/bubble_facebook_share_button.png);
+}
+.smedia.twitter {
+    background: url(https://2.bp.blogspot.com/-3r8sHe1Qy5M/UWHsNMDDzHI/AAAAAAAABog/q3V7mYirmOY/s1600/bubble_twitter_share_button.png);
+}
+.smedia.email {
+    background: url(https://3.bp.blogspot.com/-ZhFqBhp79cA/UWHsMBmPxsI/AAAAAAAABn4/O8k_pGf1oCU/s1600/bubble_email_share_button.png);
+}
+.smedia.instagram {
+    background: url(https://1.bp.blogspot.com/-FSkby0cXU_8/UWHsMis8c2I/AAAAAAAABoQ/y8coyc5ystc/s1600/bubble_instagram_share_button.png);
+}
+.smedia.youtube {
+    background: url(https://4.bp.blogspot.com/-x2oyT1dBzwA/UWHsNtcWXVI/AAAAAAAABo8/8kCXTVMbM6Y/s1600/bubble_youtube_share_button.png);
+}
+.smedia.vimeo {
+    background: url(https://2.bp.blogspot.com/-01SWPeX-584/UWHsNim9CAI/AAAAAAAABo4/Z9jMox_9UrE/s1600/bubble_vimeo_share_button.png);
+}
+.smedia:hover {
+    background-position: 0 -46px;
+}
+
+/*Animaciones pelotas
+--------------------------------------------*/
+/*Animacion futbol*/
+#pelota {
+  position: relative;
+  animation: rebota 0.3s alternate infinite ease-out;
+  margin: 100px 0px 0px 1400px;
+}
+
+@keyframes rebota {
+  0% {
+    bottom: 0;
+    height: 80px;
+  }
+  100% {
+    bottom: 190px;
+  }
+}
+
+/*Animacion baloncesto*/
+.basketball {
+  position: relative;
+  top: 80px;
+  margin: 5px -5px 0px 1400px;
+}
+
+.ball {
+  position: absolute;
+  background-color: #e76f51;
+  border-radius:50%;
+  width:100px;
+  height:100px;
+  overflow: hidden;
+  border: 3px solid #333;
+  animation: bounce 1.5s ease-in infinite;
+}
+
+@keyframes bounce {
+   0% {transform: translate3d(0, 0, 0) rotate(0deg);}
+  25% {transform: translate3d(0, -120px, 0) rotate(90deg);}
+  50% {transform: translate3d(0, 0, 0) rotate(180deg);}
+  75% {transform: translate3d(0, -120px, 0) rotate(270deg);}
+  100% {transform: translate3d(0, 0, 0) rotate(360deg);}
+}
+
+.ball:before, .ball:after {
+  content:"";
+  position: absolute;
+  background-color: #333;
+  width:110px;
+  height:3px;
+  top:50px;
+  left:-5px;
+}
+
+.ball:before {
+  transform: rotate(45deg);
+}
+
+.ball:after {
+  transform: rotate(-45deg);
+}
+
+.lines {
+  position: absolute;
+  border-radius:50%;
+  border: 3px solid #333;
+  width:70px;
+  height:70px;
+  left:-20px;
+  top:-20px;
+}
+
+.lines:before {
+  content:"";
+  position: absolute;
+  border-radius:50%;
+  border: 3px solid #333;
+  width:70px;
+  height:70px;
+  top:65px;
+  left:60px;
+}
+
+@keyframes scale {
+  0% {
+    transform: scaleX(1);
+  }
+  25% {
+    transform: scaleX(0.7);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  75% {
+    transform: scaleX(0.7);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+/*Animacion beisbol*/
+.loader {
+  position: absolute;
+  left: 50%;
+  margin: 70px 570px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#ball2 {
+  position: fixed;
+  top: 3em;
+  width: 3em;
+  height: 3em;
+  left: 7em;
+  -webkit-animation: bounce .7s cubic-bezier(.63,.09,.76,.45) infinite alternate;
+  -moz-animation:    bounce .7s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
+  -o-animation:      bounce .7s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
+  animation:         bounce .7s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
+}
+
+#bat {
+  position: fixed;
+  top: 3em;
+  left: -10.5em;
+  -webkit-animation: hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
+  -moz-animation:    hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
+  -o-animation:      hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
+  animation:         hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
+}
+
+.red {
+  fill:#D7172A;
+}
+
+.tan {
+  fill:#FFD87D;
+}
+
+.white {
+  fill:#ffffff;
+}
+
+
+@-webkit-keyframes bounce {
+  0% { 
+    top: -7em; height: 3em; width: 3em; transform: rotate(20deg); 
+  }
+  25% {
+     height: 3em; width: 3em; 
+    }
+  75% {
+     height: 3em; width: 3em; 
+    }
+  100% { 
+    top: 0; height: 3em; width: 3em; transform: rotate(-20deg); 
+  }
+}
+
+@-moz-keyframes bounce {
+  0% { 
+    top: -7em; height: 3em; width: 3em; transform: rotate(20deg); 
+  }
+  25% { 
+    height: 3em; width: 3em; 
+  }
+  75% { 
+    height: 3em; width: 3em; 
+  }
+  100% { 
+    top: 0; height: 3em; width: 3em; transform: rotate(-20deg); 
+  }
+}
+
+@-o-keyframes bounce {
+   0% {
+     transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+  25% {
+    transform: translate3d(0, -120px, 0) rotate(90deg);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) rotate(180deg);
+  }
+  75% {
+    transform: translate3d(0, -120px, 0) rotate(270deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+   0% {
+     transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+  25% {
+    transform: translate3d(0, -120px, 0) rotate(90deg);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) rotate(180deg);
+  }
+  75% {
+    transform: translate3d(0, -120px, 0) rotate(270deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(360deg);
+  }
+}
+
+@keyframes hit {
+  0% { 
+    transform: rotate(0deg);
+  } 
+  100% { 
+    transform: rotate(-10deg); 
+  }
+}
+
+/*Pelota de tenis*/
+
+.ball3 {
+	position: relative;
+	width: 75px;
+	height: 75px;
+	background: #c9f364;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	animation: ball 1.5s linear infinite;
+  margin: 150px 1450px;
+}
+
+.ball3:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 5px solid #fff;
+	border-radius: 50%;
+	box-sizing: border-box;
+	background: transparent;
+	left: -65%;
+	filter: blur(1px);
+}
+.ball3:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 5px solid #fff;
+	border-radius: 50%;
+	box-sizing: border-box;
+	background: transparent;
+	right: -65%;
+	filter: blur(1px);
+}
+@keyframes ball {
+	0% {
+		transform: translate(-25%, -20%) translateY(-150px) rotate(0deg);
+	}
+	50% {
+		transform: translate(-25%, -20%) translateY(0px) rotate(180deg);
+	}
+	100% {
+		transform: translate(-25%, -20%) translateY(-150px) rotate(360deg);
+	}
+}
+

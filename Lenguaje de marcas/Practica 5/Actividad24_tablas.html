@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!--Creacion de tablas aninadas por Alejandro Rodriguez Mena-->
+<html>
+
+<head>
+  <title> Actividad 2.4 </title>
+  <meta name="author" content="Alejandro Rodriguez Mena" />
+  <meta name="description" content="tablas" />
+  <style>
+    td {
+      padding: 10px;
+    }
+
+    table {
+      margin: auto
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--Tabla 1-->
+  <table width="50%" border="1">
+    <!--The width attribute on the table element is obsolete-->
+    <caption>
+      <p> Tabla 1 </p>
+    </caption>
+    <tbody>
+      <tr style="background-color:blue">
+        <td colspan="3">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:pink" colspan="1">&nbsp;</td>
+        <td style="background-color:brown" colspan="1">&nbsp;</td>
+        <td style="background-color:pink" colspan="1">&nbsp;</td>
+      </tr>
+      <tr style="background-color:blue">
+        <td colspan="3">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+
+  <!--Tabla 2-->
+  <table width="50%" border="1" rules="all">
+    <!--The width attribute on the table element is obsolete-->
+    <caption>
+      <p> Tabla 2 </p>
+    </caption>
+    <tbody>
+      <tr>
+        <td rowspan="3" style="background-color: blue;"></td>
+        <td style="background-color: pink"></td>
+        <td rowspan="3" style="background-color: blue;"></td>
+      </tr>
+      <tr>
+        <td style="background-color:brown"></td>
+      </tr>
+      <tr>
+        <td style="background-color:pink"></td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+
+  <!--Tabla 3-->
+  <table width="80%" border="1" rules="all">
+    <!--The width attribute on the table element is obsolete-->
+    <caption>Tabla 3</caption>
+    <caption><i>
+        <p> Tablas anidadas</p>
+      </i></caption>
+    <!--Aunque de error, es correcto-->
+    <tbody>
+      <tr>
+        <td style="background-color:pink">&nbsp;</td>
+        <td style="background-color:rgba(209, 181, 21, 0.733)">&nbsp;</td>
+        <td style="background-color:magenta">&nbsp;</td>
+        <td style="background-color:pink">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <table width="80%" border="1" rules="all">
+    <!--The width attribute on the table element is obsolete-->
+    <tbody>
+      <tr>
+        <td rowspan="2">&nbsp;</td>
+        <td style="background-color: blue"></td>
+        <td style="background-color:orangered"></td>
+        <td rowspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="background-color:orangered"></td>
+        <td style="background-color: blue"></td>
+      </tr>
+    </tbody>
+  </table>
+  <table width="80%" border="1" rules="all">
+    <!--The width attribute on the table element is obsolete-->
+    <tbody>
+      <tr>
+        <td style="background-color:pink">&nbsp;</td>
+        <td style="background-color:magenta">&nbsp;</td>
+        <td style="background-color:rgba(209, 181, 21, 0.733)">&nbsp;</td>
+        <td style="background-color:pink">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+
+  <!--Tabla 4-->
+  <table width="80" border="1" rules="all">
+    <!--The width attribute on the table element is obsolete-->
+    <caption>Tabla 4</caption>
+    <caption>
+      <p> Top 10 Grossing Animated Films of All Time</p>
+    </caption>
+    <!--Aunque de error, es correcto-->
+    <tbody>
+      <tr>
+        <td style="background-color:rgb(14, 126, 120); color:whitesmoke">Film Title</td>
+        <td style="background-color:rgb(14, 126, 120); color:whitesmoke">Released</td>
+        <td style="background-color:rgb(14, 126, 120); color:whitesmoke">Studio</td>
+        <td style="background-color:rgb(14, 126, 120); color:whitesmoke">Worldwide Gross</td>
+        <td style="background-color:rgb(14, 126, 120); color:whitesmoke">Domestic Gross</td>
+        <td style="background-color:rgb(14, 126, 120); color:whitesmoke">Foreign Gross</td>
+        <td style="background-color:rgb(14, 126, 120); color:whitesmoke">Budget</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td style="background-color:white"><b>Frozen</b></td>
+        <td style="background-color:white"><b></b>2013</td>
+        <td style="background-color:white"><b></b>Disney</td>
+        <td style="background-color:white"><b></b>$1,276,480,335</td>
+        <td style="background-color:white"><b></b>$400,738,009</td>
+        <td style="background-color:white"><b></b>$875,742,326</td>
+        <td style="background-color:white"><b></b>$150,000,000</td>
+      </tr>
+      <tr>
+        <td style="background-color:rgb(145, 138, 138)"><b>Incredibles 2</b></td>
+        <td style="background-color:rgb(145, 138, 138)">2018</td>
+        <td style="background-color:rgb(145, 138, 138)">Disney Pixar</td>
+        <td style="background-color:rgb(145, 138, 138)">$1,210,072,582</td>
+        <td style="background-color:rgb(145, 138, 138)">$606,782,977</td>
+        <td style="background-color:rgb(145, 138, 138)">$602,369,069</td>
+        <td style="background-color:rgb(145, 138, 138)">$200,000,000</td>
+      </tr>
+      <tr>
+        <td style="background-color:white"><b>Minions</b></td>
+        <td style="background-color:white">2015</td>
+        <td style="background-color:white">Universal</td>
+        <td style="background-color:white">$1,159,398,397</td>
+        <td style="background-color:white">$336,045,770</td>
+        <td style="background-color:white">$823,352,627</td>
+        <td style="background-color:white">$74,000,000</td>
+      </tr>
+      <tr>
+        <td style="background-color:rgb(145, 138, 138)"><b>Toy Story 3</b></td>
+        <td style="background-color:rgb(145, 138, 138)">2010</td>
+        <td style="background-color:rgb(145, 138, 138)">Disney Pixar</td>
+        <td style="background-color:rgb(145, 138, 138)">$1,066,969,703</td>
+        <td style="background-color:rgb(145, 138, 138)">$415,004,880</td>
+        <td style="background-color:rgb(145, 138, 138)">$651,964,823</td>
+        <td style="background-color:rgb(145, 138, 138)">$200,000,000</td>
+      </tr>
+      <tr>
+        <td style="background-color:white"><b>Despicable Me 3</b></td>
+        <td style="background-color:white">2017</td>
+        <td style="background-color:white">Universal</td>
+        <td style="background-color:white">$1,034,799,409</td>
+        <td style="background-color:white">$264,624,300</td>
+        <td style="background-color:white">$770,715,109</td>
+        <td style="background-color:white">$80,000,000</td>
+      </tr>
+      <tr>
+        <td style="background-color:rgb(145, 138, 138)"><b>Finding Dory</b></td>
+        <td style="background-color:rgb(145, 138, 138)">2016</td>
+        <td style="background-color:rgb(145, 138, 138)">Disney Pixar</td>
+        <td style="background-color:rgb(145, 138, 138)">$1,028,570,889</td>
+        <td style="background-color:rgb(145, 138, 138)">$486,295,561</td>
+        <td style="background-color:rgb(145, 138, 138)">$542,275,328</td>
+        <td style="background-color:rgb(145, 138, 138)">$175,000,000</td>
+      </tr>
+      <tr>
+        <td style="background-color:white"><b>Zootopia</b></td>
+        <td style="background-color:white">2016</td>
+        <td style="background-color:white">Disney</td>
+        <td style="background-color:white">$1,023,227,498</td>
+        <td style="background-color:white">$341,268,248</td>
+        <td style="background-color:white">$681,959,250</td>
+        <td style="background-color:white">$150,000,000</td>
+      </tr>
+      <tr>
+        <td style="background-color:rgb(145, 138, 138)"><b>Despicable Me 2</b></td>
+        <td style="background-color:rgb(145, 138, 138)">2013</td>
+        <td style="background-color:rgb(145, 138, 138)">Universal</td>
+        <td style="background-color:rgb(145, 138, 138)">$970,761,885</td>
+        <td style="background-color:rgb(145, 138, 138)">$368,061,265</td>
+        <td style="background-color:rgb(145, 138, 138)">$602,700,620</td>
+        <td style="background-color:rgb(145, 138, 138)">$76,000,000</td>
+      </tr>
+      <tr>
+        <td style="background-color:white"><b>The Lion King</b></td>
+        <td style="background-color:white">1994</td>
+        <td style="background-color:white">Disney</td>
+        <td style="background-color:white">$987,483,777</td>
+        <td style="background-color:white">$422,783,777</td>
+        <td style="background-color:white">$564,700,000</td>
+        <td style="background-color:white">$45,000,000</td>
+      </tr>
+      <tr>
+        <td style="background-color:rgb(145, 138, 138)"><b>Finding Nemo</b></td>
+        <td style="background-color:rgb(145, 138, 138)">2003</td>
+        <td style="background-color:rgb(145, 138, 138)">Pixar</td>
+        <td style="background-color:rgb(145, 138, 138)">$936,743,261</td>
+        <td style="background-color:rgb(145, 138, 138)">$380,843,261</td>
+        <td style="background-color:rgb(145, 138, 138)">$555,900,000</td>
+        <td style="background-color:rgb(145, 138, 138)">$94,000,000</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

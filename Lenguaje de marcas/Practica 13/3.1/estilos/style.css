@@ -1,0 +1,27 @@
+/*Por Alejandro Rodriguez Mena */
+/*Ejercicio CSS3 3.1*/
+
+/************* Pagina principal ***************/
+body {
+    display: flex;
+}
+
+/***** Seccion yellow(amarilla) ****/
+#yellow {
+    order: 1;
+}
+
+/******* Seccion red(roja) ****/
+#red {
+    order: 2;
+}
+
+/****** Secion en general *****/
+section {
+    order: 3;
+}
+
+/**** Secion orange(naranja) *****/
+#orange {
+    flex-grow: 1;
+}

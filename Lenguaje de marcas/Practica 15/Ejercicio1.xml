@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!-- Por Alejandro Rodriguez Mena-->
+<!-- Crear un DTD interno para almacenar la información de jugadores de Valencia Basket.-->
+
+<!-- El ejercicio nos da esto: -->
+<!DOCTYPE jugadores [
+<!ELEMENT jugadores (jugador*)>
+<!ELEMENT jugador (cod_jugador, nombre, nombre, fecha_nac, posicion, numero, altura)>
+<!ELEMENT cod_jugador (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ATTLIST nombre apodo CDATA #IMPLIED>
+<!ELEMENT fecha_nac (#PCDATA)>
+<!ELEMENT posicion (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT altura (#PCDATA)>
+]>
+    
+<jugadores>
+   <jugador>
+        <cod_jugador>0001</cod_jugador>
+        <nombre>Rafa Martínez</nombre>
+        <nombre apodo="Pitbull"></nombre>
+        <fecha_nac>3/03/1982</fecha_nac>
+        <posicion>Escolta</posicion>
+        <numero>17</numero>
+        <altura>190cm</altura>
+    </jugador>
+    
+    <jugador>
+        <cod_jugador>0002</cod_jugador>
+        <nombre>Fernando San Emeterio</nombre>
+        <nombre apodo="San Eme"></nombre>
+        <fecha_nac>01/01/1984</fecha_nac>
+        <posicion>Alero</posicion>
+        <numero>19</numero>
+        <altura>205cm</altura>
+    </jugador>
+</jugadores>

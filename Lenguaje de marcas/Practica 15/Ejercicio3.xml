@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Por Alejandro Rodriguez Mena-->
+<!--El siguiente documento XML ("perifericos.xml") está bien formado. Sin embargo, no es
+válido. Para que lo sea, realizar los cambios necesarios en dicho documento, pero sin
+modificar la DTD interna. -->
+
+<!DOCTYPE perifericos [
+<!ELEMENT perifericos (#PCDATA)>
+]>
+
+<!--Ejercicio modificado para que sea correcto.-->
+<perifericos>
+
+</perifericos>
+
+<!-- El ejercicio nos da esto:
+<perifericos>
+<periferico>impresora</periferico>
+<periferico>monitor</periferico>
+<periferico>teclado</periferico>
+</perifericos>-->

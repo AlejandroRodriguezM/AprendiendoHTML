@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="author" content="Alejandro Rodriguez Mena" />
+  <meta name="description" content="Formularios" />
+  <title> HTML formularios1 </title>
+</head>
+
+<body>
+  <form action="mailto:aloxfloyd@gmail.com" method="post" enctype="text/plain">
+    <div style="background: rgb(156, 214, 214);
+    padding: 15px;
+    border: 1px solid rgb(24, 2, 2);
+    margin: 10px;
+    ">
+      <fieldset>
+        <h1 style="text-align:center;">FORMULARIO DE CONTACTO</h1>
+      </fieldset>
+      <table align="center">
+        <tr>
+          <td>
+            <p style="font-size: small; font-family:Arial, Helvetica, sans-serif;"><label for="name"><b>Nombre:</b></label></p>
+          </td>
+          <td>
+            <input type="text" id="name" name="user_name" size="25" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p style="font-size: small; font-family:Arial, Helvetica, sans-serif;"><b>Sexo:</b></p>
+          </td>
+          <td>
+            <p style="font-size: small; font-family:Arial, Helvetica, sans-serif;">
+              <input type="radio" name="genero" id="hombre"><label for="hombre">Hombre</label>
+              <input type="radio" name="genero" id="mujer"><label for="mujer">Mujer</label>
+              <input type="radio" name="genero" id="Prefiero_no_contestar"><label for="Prefiero_no_contestar">Prefiero no contestar</label>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p style="font-size: small; font-family:Arial, Helvetica, sans-serif;"><label for="E-mail"><b>E-mail:</b></label></p>
+
+          </td>
+          <td>
+            <input type="text" id="E-mail" name="E-mail" size="25" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p style="font-size: small; font-family:Arial, Helvetica, sans-serif;"><label for="Mensaje"><b>Mensaje:</b></label></p>
+          </td>
+          <td>
+            <textarea name="mensaje" cols="30" rows="4" id="Mensaje"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p style="font-size: small; font-family:Arial, Helvetica, sans-serif;"><label><b>Aficiones</b></label></p>
+          </td>
+          <td>
+            <p style="font-size: small; font-family:Arial, Helvetica, sans-serif;">
+              <input type="checkbox" name="deportes" id="deportes"><label>Deportes</label><br>
+              <input type="checkbox" name="musica" id="musica"><label>Música</label><br>
+              <input type="checkbox" name="cine" id="cine"><label>Cine</label><br>
+              <input type="checkbox" name="lectura" id="lectura"><label>Lectura</label><br>
+              <input type="checkbox" name="otros" id="otros"><label>Otros</label>
+            </p>
+          </td>
+        <tr>
+          <td colspan="2">
+            <p style="font-size: small; font-family:Arial, Helvetica, sans-serif; text-align: center;">
+              <input type="submit" name="enviar" value="Enviar" />
+              <input type="reset" name="restablecer" value="Restablecer" />
+            </p>
+          </td>
+        </tr>
+      </table><!--Indica fallo, pero en el validador no da fallo-->
+    </div>
+  </form>
+</body>
+</html>

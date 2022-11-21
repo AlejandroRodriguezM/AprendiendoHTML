@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ Alejandro Rodriguez Mena
+Fecha: 02/05/2022
+Desarrolla el esquema XSD para el enunciado anterior y enlázalo al XML para que sea válido.
+Comprueba que el xml sea válido, asegurándote que cumple todas las restricciones del
+enunciado. -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="0.1" xml:lang="es" elementFormDefault="qualified">
+
+	<xs:element name="clientes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="cliente"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="cliente">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="cod_cliente"/>
+				<xs:element ref="direccion"/>
+				<xs:element ref="telefonos" />
+				<xs:element ref="tipo_cliente"/>
+				<xs:element ref="facturas"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:element name="cod_cliente">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[A-Za-z]{1}[0-9]{4}"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+
+	<xs:element name="direccion">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nombre_via" type="xs:string" />
+				<xs:element name="numero_via" type="xs:integer" />
+				<xs:element name="localidad" type="xs:string" />
+				<xs:element name="provincia" type="xs:string" />
+				<xs:element name="codigo_postal" type="xs:integer" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="telefonos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="telefono" maxOccurs="unbounded" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="telefono">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="tipo_telefono"/>
+				<xs:element name="num_telefono" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="tipo_telefono">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="particular"/>
+				<xs:enumeration value="direccion"/>
+				<xs:enumeration value="rrhh"/>
+				<xs:enumeration value="contabilidad"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="tipo_cliente">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="particular"/>
+				<xs:element ref="empresa"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="particular">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombre" />
+				<xs:element ref="apellidos" />
+				<xs:element name="nif" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="empresa">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombre"/>
+				<xs:element ref="apellidos"/>
+				<xs:element name="Web" type="xs:string" minOccurs="0"/>
+				<xs:element name="cif" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="nombre" type="xs:string"/>
+	<xs:element name="apellidos" type="xs:string"/>
+
+	<xs:element name="facturas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="informacion_factura" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="informacion_factura">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="fecha" type="xs:date"/>
+				<xs:element ref="num_factura"/>
+				<xs:element ref="forma_pago"/>
+				<xs:element ref="productos"/>
+				<xs:element ref="cuantia"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:element name="num_factura">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="(EMP|PAR)-[0-9]{2}-[0-9]{4}"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+
+	<xs:element name="forma_pago">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Paypal"/>
+				<xs:enumeration value="Bizum"/>
+				<xs:enumeration value="Efectivo"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="productos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="producto" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="producto">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="cantidad" type="xs:integer"/>
+				<xs:element name="nombre_producto" type="xs:string"/>
+				<xs:element ref="codigo_producto" />
+				<xs:element name="precio_unitario" type="xs:decimal"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="codigo_producto">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[A-Za-z]{3}-[A-Za-z]{3}-[A-Za-z]{3}"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+
+	<xs:element name="cuantia">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="subtotal" type="xs:decimal"/>
+				<xs:element name="iva" type="xs:decimal"/>
+				<xs:element name="total" type="xs:decimal"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

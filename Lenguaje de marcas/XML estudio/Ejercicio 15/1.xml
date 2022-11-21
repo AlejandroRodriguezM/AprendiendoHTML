@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE jugadores [
+<!ELEMENT jugadores (jugador*)>
+<!ELEMENT jugador (cod_jugador,nombre,nombre,fecha_nacimiento,posicion,numero,altura)>
+<!ELEMENT cod_jugador (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ATTLIST nombre apodo CDATA #IMPLIED>
+<!ELEMENT fecha_nacimiento (#PCDATA)>
+<!ELEMENT posicion (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT altura (#PCDATA)>
+]>
+
+<jugadores>
+    <jugador>
+        <cod_jugador>001</cod_jugador>
+        <nombre>jugador1</nombre>
+        <nombre apodo="juja1"></nombre>
+        <fecha_nacimiento>01/01/1984</fecha_nacimiento>
+        <posicion>1</posicion>
+        <numero>1</numero>
+        <altura>1</altura>
+    </jugador>
+
+    <jugador>
+        <cod_jugador>001</cod_jugador>
+        <nombre>jugador1</nombre>
+        <nombre apodo="juja2"></nombre>
+        <fecha_nacimiento>01/01/1984</fecha_nacimiento>
+        <posicion>1</posicion>
+        <numero>1</numero>
+        <altura>1</altura>
+    </jugador>
+</jugadores>

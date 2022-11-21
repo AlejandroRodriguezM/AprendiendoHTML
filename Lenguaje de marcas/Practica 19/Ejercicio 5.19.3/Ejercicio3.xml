@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ejer3.xsl" type="text/xsl"?>
+<catalogo>
+    <libro>
+        <title>Don Quijote</title>
+        <autores>
+            <autor>Cervantes</autor>
+        </autores>
+    </libro>
+    <libro>
+        <title>Patrones de diseño en programación</title>
+        <autores>
+            <autor>Erich Gamma</autor>
+            <autor>John Vlissides</autor>
+            <autor>Ralph Johnson</autor>
+        </autores>
+    </libro>
+</catalogo>

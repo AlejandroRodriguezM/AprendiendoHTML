@@ -1,0 +1,220 @@
+/*Por Alejandro Rodriguez Mena */
+/* CSS 3 1.2 */
+
+/* El header */
+header {
+  background-color: #046dd5;
+  color: white;
+  font-family: 'Verdana', sans-serif;
+  padding: 1em;
+  padding-bottom: 20px;
+}
+
+header h1 {
+  padding: 5px;
+  margin: 0;
+  /* Para quitar el espacio entre h1 y h2 */
+}
+
+header h2 {
+  padding: 5px;
+  margin: 0;
+  /* Para quitar el espacio entre h1 y h2 */
+}
+
+header a {
+  /*Afecta a las letras dentro del header*/
+  color: white;
+  text-decoration: none;
+  /*Para quitar cualquier decoracion, como subrayado*/
+}
+
+header #signup a:first-child {
+  border-right: 1px solid white;
+  /*Barrita que separa el register del login*/
+  padding-right: 10px;
+}
+
+/* Navegacion */
+
+#menu ul {
+  margin: 0;
+  /* Elimina el margen a la cabecera*/
+  padding: 0;
+  /* Elimina el tipo de lista */
+}
+
+#menu li {
+  background-color: white;
+  /* Fondo del menu de navigacion */
+  text-align: center;
+  /* Alineacion del menu de navegacion */
+  list-style-type: none;
+  padding: 1em 0;
+}
+
+#menu li a {
+  color: black;
+  /* Cambiar el color de las opciones del menu de navegacion a negro */
+  text-decoration: none;
+}
+
+#hamburger,
+.hamburger {
+  display: none;
+  /*Esto servira para que no aparezca el chech */
+}
+
+#news header {
+  width: 10em;
+  /*Modifica el texto que se vera en la imagen superpuesta */
+  padding: 1em;
+  position: absolute;
+  /* Superpone el texto en la imagen */
+}
+
+#news header h1 {
+  margin: 0;
+  text-shadow: .2em .2em .2em black;
+  /* Crea una sombra con una dimension descrita */
+}
+
+#news header a {
+  color: white;
+  text-decoration: none;
+}
+
+#news img {
+  width: 100%;
+}
+
+#news article {
+  background-color: white;
+
+  margin: 1em 1em 1em 0;
+}
+
+#news article > p {
+  padding: 0 1em;
+  /*Esto afecta a todo lo que se encuentra dentro de news*/
+}
+
+#news article p:first-of-type:first-letter {
+  font-size: 40px;
+  /* Esto cambia solamente la 1º letra del articulo */
+}
+
+#news footer {
+  background-color: #E1493E;
+  color: white;
+  padding: 1em;
+}
+
+#news footer a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  /* Añade el subrayado de color blanco */
+  padding-bottom: 2px;
+}
+
+#news footer .tags {
+  margin-right: 10px;
+  /* Separa el texto de clase tags del autor */
+}
+
+#news footer .comments {
+  margin-left: 1em;
+}
+
+#news footer .comments:after {
+  content: ' comments';
+  /*Añade la palabra "comments":" */
+}
+
+#news footer .author:before {
+  content: "By ";
+  /*Añade la palabra "By:" */
+}
+
+/* Relacionado o related */
+
+#related {
+  background-color: #2a2f33;
+  /* Añade un fondo */
+  padding: 1em;
+}
+
+#related h1 a {
+  /* Afecta a todo lo h1 */
+  color: white;
+  text-decoration: none;
+}
+
+#related p {
+  /* Afecta a todo el contenido con marca p de "related" */
+  color: white;
+}
+
+/* Pie o footer */
+
+footer {
+  background-color: #2a2f33;
+  color: white;
+  padding: 1em;
+  margin-right: 1em;
+  height: 1em;
+}
+
+footer p {
+  margin: 0;
+}
+
+/*Fuentes y tamaños*/
+
+p {
+  font-family: "Georgia", serif;
+  line-height: 15px;
+}
+
+header h2 {
+  font-size: 10px;
+}
+
+header a {
+  font-size: 0.8em;
+}
+
+#news header {
+  font-size: 11px;
+}
+
+#news footer {
+  font-size: 10px;
+}
+
+/* Seccion del menu, colores */
+
+li {
+  border-top: 4px solid #e1493e;
+}
+
+li+li {
+  border-top: 4px solid #8aba56;
+}
+
+li+li+li {
+  border-top: 4px solid #5b4282;
+}
+
+li+li+li+li {
+  border-top: 4px solid #ff8932;
+}
+
+li+li+li+li+li {
+  border-top: 4px solid #19b6e9;
+}
+
+li+li+li+li+li+li {
+  border-top: 4px solid #e84c8b;
+}

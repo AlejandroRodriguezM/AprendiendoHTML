@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Por Alejandro Rodriguez Mena-->
+<!-- El siguiente documento XML ("paises.xml") está bien formado. Sin embargo, no es
+     válido. Para que lo sea, realizar los cambios necesarios en dicho documento, pero sin
+     modificar la DTD interna-->
+
+     <!DOCTYPE paises [
+     <!ELEMENT paises (pais, ciudad?)*>
+     <!ELEMENT pais (#PCDATA)>
+     <!ELEMENT ciudad (#PCDATA)>
+     ]>
+     
+     <!--Para que sea correcto, se modificara de la siguiente manera. -->
+     <paises>
+         <pais>italia</pais>
+         <ciudad>florencia</ciudad>
+     </paises>
+     
+     <!--
+     <paises>
+         <pais>italia</pais>
+         <ciudad>florencia</ciudad>
+         <pais>portugal</pais>
+         <ciudad>lisboa</ciudad>
+         <ciudad>oporto</ciudad>
+         <pais>francia</pais>
+     </paises>
+     -->

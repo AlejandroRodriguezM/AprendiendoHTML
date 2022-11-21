@@ -1,0 +1,90 @@
+h1#titulo {
+    color: teal;
+    font-weight: bold;
+}
+
+h2#subtitulo {
+    font-weight: bold;
+    color: blue;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    color: black;
+}
+
+strong {
+    color: red;
+}
+
+span.destacado {
+    color: orange;
+}
+
+span.especial {
+    color: purple;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    color: green;
+  }
+
+a {
+    color: red;
+}
+
+em {
+    color: blue;
+}
+
+ tr, td {
+     border: black 1px solid;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 13px;
+     margin: 10px;
+     padding: 5px;
+ }
+
+ td strong {
+     color: orange;
+ }
+
+ tr span.destacado {
+    color: orange;
+}
+
+ th {
+    border: black 1px solid;
+    color:red;
+ }
+
+ th.especial {
+    border: black 1px solid;
+    color: orange;
+
+ }
+
+caption {
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+}
+
+div p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    color: olive;
+}
+
+div span#especial {
+    color: fuchsia;
+}
+
+div a {
+    color:green;
+    text-decoration: underline;
+}

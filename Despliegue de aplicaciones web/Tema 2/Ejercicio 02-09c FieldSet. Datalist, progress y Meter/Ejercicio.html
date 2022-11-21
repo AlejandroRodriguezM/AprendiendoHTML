@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Alejandro RM</title>
+    <script>
+      function cambio(){
+        document.getElementById("file").value = Math.random() * 100;
+        document.getElementById("file2").value = Math.random() * 100;
+        document.getElementById("file3").value = Math.random() * 100;
+        document.getElementById("file4").value = Math.random() * 100;
+      }
+    </script>
+</head>
+<body>
+<h1>Ejercicio 02-09c</h1>
+    <h1>Ejercicio 1.</h1>
+<!--Crea un formulario como este usando fieldtext  -->
+<div class="form">
+<form action="" method="get">
+  <h1>FORMULARIO 1</h1>
+    <fieldset>
+    
+      <legend>Datos personales</legend>
+      <form action="" method="get">
+        <label for="texto">Nombre:</label>
+        <input name="texto"><br>
+      
+
+        <label for="texto">Apellido:</label>
+        <input name="texto"><br>
+
+        <label for="texto">Edad:</label>
+        <input name="texto"><br>
+       
+        <label for="texto">Seleccione tu satisfacción con el concierto</label> 
+        <input type="range" name="range" value="100" min="0" max="100" step="1">
+        <br>
+    </fieldset>
+    <input type="submit" value="Gracias por tus opiniones"><br>
+  </form>
+</div>
+
+<h1>Ejercicio 2.</h1>
+<!--Modifica el anterior para Crear un formulario como este usando datalist y textarea  -->
+<div class="form">
+  <h1>FORMULARIO 2</h1>
+    <fieldset>
+      <legend>Datos personales</legend>
+      <form action="" method="get">
+        <label for="texto">Nombre:</label>
+        <input name="texto"><br>
+      
+
+        <label for="texto">Apellido:</label>
+        <input name="texto"><br>
+
+        <label for="texto">Edad:</label>
+        <input name="texto"><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Concierto</legend>
+
+    <label for="concierto">Escribe en qué te gusta pasar tu tiempo de ocio</label>
+    <input type="texto" name="cantante"  list="listaconcierto">
+    <datalist id="listaconcierto">
+      <option label="Omar " value="Omar Montes">
+      <option label="Malú" value="Malú">
+      <option label="Julio Iglesias" value="Julio Iglesias">
+      <option label="Rosalía" value="Rosalía">
+    </datalist>
+  </fieldset>
+  <fieldset>
+    <legend>Qué te pareció el concierto:</legend> <br>
+        <textarea name="texto" rows="15" cols="30"></textarea><br>
+    
+        <label for="valoracion">Valoración</label>
+          <input type="texto" name="Valoración"  list="listavaloración">
+          <datalist id="listavaloración">
+            <option label="mal" value="mal">
+            <option label="bien" value="bien">
+            <option label="regular" value="regular">
+            <option label="estupendo" value="estupendo">
+          </datalist>
+        </fieldset>
+        
+<input type="submit" value="enviar"> Gracias por tus opiniones<br>
+      </div>
+  
+
+
+
+
+<h1>Ejercicio 3.</h1>
+<!--Crear un formulario como este usando datalist y la etiqueta progress. Añade un javascript 
+para que cuando pulse genere datos aleatorios en los valores del progress  -->
+<div class="form">
+  <h1>FORMULARIO 3</h1>
+    <fieldset>
+      <legend>Genera tu persona para el juego</legend>
+      <form action="" method="get">
+        <label for="texto">Nombre:</label>
+        <input name="texto"><br>
+        <label for="valoracion">Valoración</label>
+        <input type="texto" name="Valoración"  list="listavaloración"><br>
+        
+        <datalist id="listavaloración">
+          <option label="guerrero" value="guerrero">
+          <option label="mago" value="mago">
+          <option label="ladrón" value="ladrón">
+          <option label="caballero" value="caballero">
+        </datalist>
+
+        <label for="texto">Escoge la edad</label> <br>
+        <input type="range" name="range" value="100" min="0" max="100" step="1">
+        <br>
+      </form>
+    <button onclick="cambio()"> Genera tu personaje </button>
+    </fieldset>
+
+    <fieldset>
+        <legend>Datos del personaje</legend><br>
+          <label for="file">Fuerza</label><br>
+          <progress max="100" value="100" id="file"> 100% </progress><br>
+
+          <label for="file">Velocidad</label><br>
+          <progress max="100" value="100" id="file2"> 100% </progress><br>
+
+          <label for="file">Persuasión</label><br>
+          <progress max="100" value="100" id="file3"> 100% </progress><br>
+
+          <label for="file">Espionaje</label><br>
+          <progress max="100" value="100" id="file4"> 100% </progress><br>
+
+    </fieldset>
+  </div>
+
+<h1>Ejercicio 4.</h1>
+<!--Modifica el anterior para cambiar los progress por meter  -->
+<div class="form">
+<form action="" method="get">
+  <h1>FORMULARIO 4</h1>
+  <fieldset>
+    <legend>Genera tu persona para el juego</legend>
+    <form action="" method="get">
+      <label for="texto">Nombre:</label>
+      <input name="texto"><br>
+      <label for="valoracion">Valoración</label>
+      <input type="texto" name="Valoración"  list="listavaloración"><br>
+      
+      <datalist id="listavaloración">
+        <option label="guerrero" value="guerrero">
+        <option label="mago" value="mago">
+        <option label="ladrón" value="ladrón">
+        <option label="caballero" value="caballero">
+      </datalist>
+
+      <label for="texto">Escoge la edad</label> <br>
+      <input type="range" name="range" value="100" min="0" max="100" step="1">
+      <br>
+  <input type="submit" value="Genera tu personaje">
+  </fieldset>
+
+  <fieldset>
+      <legend>Datos del personaje</legend><br>
+        <label for="file">Fuerza</label><br>
+        <meter value="100" max="200" min="1" high="150" low="60" ></meter><br>
+
+        <label for="file">Velocidad</label><br>
+        <meter value="100" max="200" min="1" high="150" low="60"></meter><br>
+
+        <label for="file">Persuasión</label><br>
+        <meter value="100" max="200" min="1" high="150" low="60"></meter><br>
+
+        <label for="file">Espionaje</label><br>
+        <meter value="100" max="200" min="1" high="150" low="60"></meter><br>
+
+  </fieldset>
+  
+</form>
+</div>
+   
+
+
+</body>
+</html>

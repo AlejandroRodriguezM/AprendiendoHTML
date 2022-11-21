@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Por Alejandro Rodriguez Mena-->
+<!--El siguiente documento XML ("bebidas.xml") está bien formado. Sin embargo, no es
+válido. Para que lo sea, realizar los cambios necesarios en dicho documento, pero sin
+modificar la DTD interna.-->
+
+<!DOCTYPE bebidas [
+<!ELEMENT bebidas (bebida*)>
+<!ELEMENT bebida ((codigo | nombre), precio)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+]>
+
+<!--Ejercicio modificado para que sea correcto.-->
+<bebidas>
+    <bebida>
+        <codigo>L45</codigo>
+        <precio>8</precio>
+    </bebida>
+</bebidas>
+
+<!-- El ejercicio nos da esto:
+<bebidas>
+    <bebida>
+        <codigo>L45</codigo>
+        <nombre>leche</nombre>
+        <precio>8</precio>
+        </bebida>
+        <bebida>
+        <precio>6</precio>
+    </bebida>
+</bebidas>-->

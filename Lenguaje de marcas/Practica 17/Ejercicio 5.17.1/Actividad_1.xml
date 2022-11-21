@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Alejandro Rodriguez Mena
+Fecha: 02/05/2022
+Crea un XML para guardar la información de la factura teniendo en cuenta el enunciado anterior.
+Añade en el xml los comentarios adecuados para justificar las decisiones tomadas y documentar
+tu trabajo.-->
+<clientes>
+    <cliente>
+        <cod_cliente>A1111</cod_cliente>
+        <direccion>
+            <nombre_via>Enrique del Pez</nombre_via>
+            <numero_via>2</numero_via>
+            <localidad>Malaga</localidad>
+            <provincia>Malaga</provincia>
+            <codigo_postal>29140</codigo_postal>
+        </direccion>
+        <telefonos>
+            <telefono>
+                <tipo_telefono>particular</tipo_telefono>
+                <num_telefono>952111111</num_telefono>
+            </telefono>
+        </telefonos>
+        <tipo_cliente>
+            <empresa>
+                <nombre>Usuario</nombre>
+                <apellidos>Prueba </apellidos>
+                <web>http://www.prueba.org</web>
+                <cif>C12345678</cif>
+            </empresa>
+        </tipo_cliente>
+        <facturas>
+            <informacion_factura>
+                <fecha>2022-01-01</fecha>
+                <num_factura>EMP-22-A1111</num_factura>
+                <forma_pago>Paypal</forma_pago>
+                <productos>
+                    <producto>
+                        <cantidad>1</cantidad>
+                        <nombre_producto>Producto prueba</nombre_producto>
+                        <codigo_producto>AAA-BBB-CCC</codigo_producto>
+                        <precio_unitario>22</precio_unitario>
+                    </producto>
+                </productos>
+                <cuantia>
+                    <subtotal>17.36</subtotal>
+                    <iva>21</iva>
+                    <total>22</total>
+                </cuantia>
+            </informacion_factura>
+        </facturas>
+    </cliente>
+</clientes>

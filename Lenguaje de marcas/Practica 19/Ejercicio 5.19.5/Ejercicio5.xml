@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl"href="Ejercicio5.xsl"?>
+<catalogo>
+  <libro fechaedicion="1999">
+    <titulo>Don Quijote</titulo>
+    <autores>
+      <autor>Cervantes</autor>
+    </autores>
+  </libro>
+  <libro fechaedicion="2005">
+    <titulo>La sociedad civil moderna</titulo>
+    <autores>
+      <autor>Luis Diaz</autor>
+      <autor>Pedro Campos</autor>
+    </autores>
+  </libro>
+</catalogo>

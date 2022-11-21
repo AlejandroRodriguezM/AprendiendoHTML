@@ -1,0 +1,40 @@
+<!--
+ Alejandro Rodriguez Mena
+Fecha: 02/05/2022
+Desarrolla el DTD externo al xml creado en la actividad 1 y enlázalo al xml para que sea válido.
+Comprueba que el xml sea válido, asegurándote que cumple todas las restricciones del
+enunciado. .-->
+<!ELEMENT clientes (cliente*)>
+<!ELEMENT cliente (cod_cliente,direccion,telefonos,tipo_cliente,facturas)>
+<!ELEMENT cod_cliente (#PCDATA)>
+<!ELEMENT direccion (nombre_via,numero_via,localidad,provincia,codigo_postal)>
+<!ELEMENT nombre_via (#PCDATA)>
+<!ELEMENT numero_via (#PCDATA)>
+<!ELEMENT localidad (#PCDATA)>
+<!ELEMENT provincia (#PCDATA)>
+<!ELEMENT codigo_postal (#PCDATA)>
+<!ELEMENT telefonos (telefono+)>
+<!ELEMENT telefono (tipo_telefono,num_telefono)>
+<!ELEMENT tipo_telefono (#PCDATA)>
+<!ELEMENT num_telefono (#PCDATA)>
+<!ELEMENT tipo_cliente (empresa)>
+<!ELEMENT empresa (nombre,apellidos,web?,cif)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT web (#PCDATA)>
+<!ELEMENT cif (#PCDATA)>
+<!ELEMENT facturas (informacion_factura)>
+<!ELEMENT informacion_factura (fecha,num_factura,forma_pago,productos,cuantia)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT num_factura (#PCDATA)>
+<!ELEMENT forma_pago (#PCDATA)>
+<!ELEMENT productos (producto+)>
+<!ELEMENT producto (cantidad,nombre_producto,codigo_producto,precio_unitario)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT nombre_producto (#PCDATA)>
+<!ELEMENT codigo_producto (#PCDATA)>
+<!ELEMENT precio_unitario (#PCDATA)>
+<!ELEMENT cuantia (subtotal,iva,total)>
+<!ELEMENT subtotal (#PCDATA)>
+<!ELEMENT iva (#PCDATA)>
+<!ELEMENT total (#PCDATA)>

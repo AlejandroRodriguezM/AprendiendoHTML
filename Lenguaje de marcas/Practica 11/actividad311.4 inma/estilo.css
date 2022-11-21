@@ -1,0 +1,41 @@
+th {
+    text-align: right;
+    vertical-align: top;
+}
+
+form {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+input {
+    border: 1px solid blue;
+}
+
+input[type="email"],
+input[type="text"] {
+  width: 300px;
+  border: 1px solid blue; 
+}
+
+input.color {
+    background-color: blue;
+    color: white;
+    width: 50px;
+}
+
+button {
+	margin-right: -10px;
+	margin-left: 130px;
+	cursor: pointer;
+	color: white;
+	background-color: blue;
+	border: 2px solid grey;
+ }
+
+textarea {
+    width: 300px;
+    height: 160px;
+    border: 1px solid blue;
+}

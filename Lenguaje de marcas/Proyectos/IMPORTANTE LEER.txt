@@ -1,0 +1,3 @@
+La mascara no funciona correctamente en los navegadores aún siguiendo todos los pasos de las paginas proporcionadas por rafa.
+
+Importa el proyecto a vs.code para poder visualizarlo correctamente.

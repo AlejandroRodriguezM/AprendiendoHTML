@@ -1,0 +1,99 @@
+/*Por Alejandro Rodriguez Mena */
+/*Ejercicio CSS3 2.1*/
+
+/************* Pagina principal ***************/
+html {
+    background-color: #ddddff;
+}
+
+body {
+    width:50%;
+    margin: 0px auto;
+    background-color: #ddddff;
+}
+
+#header {
+    padding: 15px;
+    background-color: #666666;
+    color: white;
+}
+
+/**************** Menu ***********/
+#menu ul {
+    margin: 0px;
+    padding: 10px 0px;
+    background-color: #330000;
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu li {
+    border-right: 1px solid white;
+    margin: 0px 10px;
+    margin-right: 0px;
+    padding-right: 10px;
+}
+
+#menu li+li+li+li+li+li {
+    border: none;
+}
+
+/*********** Secion content *********/
+#content {
+    padding: 10px 10px;
+    background-color: white;
+}
+
+#content .news-item{
+    border-bottom: 1px solid;
+}
+
+#content h3 {
+    margin: 0px;
+    font-size: 2em;
+}
+
+#content a {
+    text-decoration: none;
+}
+
+#content img {
+    float: left;
+    width: 300px;
+    height: 200px;
+    padding: 0px 10px 10px 0px;
+}
+
+#content .introduction {
+    font-style: italic;
+}
+
+#content ul {
+    margin: 0px;
+    padding: 10px 0px;
+    list-style: none;
+}
+
+#content li {
+    padding: 3px 10px;
+    background-color: #333333;
+    display: inline;
+}
+
+#content li a {
+    color: white;
+    text-decoration:none;
+}
+
+/*********** Footer ************/
+#footer p {
+    margin: 0px;
+    padding:0px 10px;
+    background-color: white;
+}

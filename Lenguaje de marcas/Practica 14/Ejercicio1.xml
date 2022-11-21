@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<libro>
+   <titulo>Quijote</titulo>
+   <autor>Miguel de cervantes</autor>
+   <editorial>Francisco de robles</editorial>
+   <fecha-publicacion>1605</fecha-publicacion>
+   <isbn>9780744525021</isbn>
+   <tipo-tapa>Dura</tipo-tapa>
+</libro>

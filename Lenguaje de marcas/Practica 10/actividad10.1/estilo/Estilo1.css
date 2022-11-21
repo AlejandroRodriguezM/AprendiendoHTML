@@ -1,0 +1,39 @@
+h1 {
+    color: black;
+    text-decoration: underline;
+}
+
+h2 {
+    color: black;
+}
+
+p {
+    font-size: 11pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p.clase1 {
+    color:#FF6600
+}
+
+p.final {
+    color:#FF0044;
+    text-align: right;
+    background-color: #99CCFF;
+}
+
+span.sub_rojo {
+    font-weight:bold;
+    text-decoration: underline;
+    color: #FF0044;
+}
+
+#clase2 {
+    color: green;
+}
+
+#identifi1 {
+    text-decoration: underline;
+}
+
+

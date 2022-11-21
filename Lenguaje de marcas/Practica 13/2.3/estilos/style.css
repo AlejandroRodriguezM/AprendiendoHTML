@@ -1,0 +1,112 @@
+/*Por Alejandro Rodriguez Mena */
+/*Ejercicio CSS3 2.3*/
+
+/************* Pagina principal ***************/
+html {
+    background-color: #ddddff;
+}
+
+body {
+    width: 800px;
+    margin: auto;
+    background-color: #669933;
+}
+
+/******* Cabecera *********/
+#header {
+    padding: 20px;
+    background-color: #336699;
+    color: white;
+}
+
+#header h2 {
+    position: absolute;
+    width: 45%;
+    height: 6vh;
+    top: 44%;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #336699;
+    color: white;
+    text-align: center;
+    -webkit-transform: rotate(90deg);
+}
+
+/*********** Secion content *********/
+#content {
+    margin-right: 190px;
+    padding: 0px 10px;
+    background-color: white;
+}
+
+#content a {
+    color: blue;
+    text-decoration: none;
+}
+
+#content h3 {
+    margin: 0px;
+    font-size: 2em;
+}
+
+#content img {
+    float: left;
+    width: 300px;
+    height: 200px;
+    padding: 0px 10px 10px 0px;
+}
+
+#content .news-item {
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+
+#content .introduction {
+    font-style: italic;
+}
+
+#content ul {
+    margin: 0px;
+    padding: 5px 0px;
+    list-style: none;
+}
+
+#content li {
+    border-bottom: 3px solid #996633;
+    padding: 3px 10px;
+    display: inline;
+}
+
+#content li a {
+    color: #333333;
+}
+
+/**************** Menu ***********/
+#menu {
+    float: right;
+    width: 190px;
+    background-color: #669933;
+}
+
+#menu ul {
+    padding: 0px;
+    list-style: none;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu li {
+    padding: 20px;
+    text-align: center;
+}
+
+/*********** Footer ************/
+#footer p {
+    margin: 0;
+    padding: 0px 10px;
+    background-color: white;
+}

@@ -1,0 +1,28 @@
+table{
+    border:black 1px solid;
+    width: 550px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+
+caption {
+    text-align: center;
+    caption-side: bottom;
+    margin: -15px;
+}
+
+tbody.yellow{
+    background-color:yellow;
+}
+
+tbody.pink{
+    background-color:pink;
+}
+
+tbody.grey{
+    background-color:grey;
+}
+
+

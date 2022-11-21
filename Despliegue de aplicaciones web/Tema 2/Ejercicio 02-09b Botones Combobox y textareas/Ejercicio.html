@@ -1,0 +1,43 @@
+  
+
+  <h1>Ejercicio 4</h1>
+  <!-- Crea un cuadro combinado como los de la imagen -->
+
+  <form action="servicio.php" method="get">
+    <label for="provincia" id= "pro">
+    </label><br> 
+    <select name="provincia">
+      <optgroup label="Cádiz">
+        <option value="ar"Arcos de la Frontera</option>
+        <option value="vi">Villamartín</option>
+        <option value="bor">Bornos</option>
+        <option value="ol">Olvera</option>
+      </optgroup>
+      <optgroup label="Málaga">
+        <option value="be">Benaoján</option>
+        <option value="ata">Atajate</option>
+        <option value="ga">Gaucín</option>
+        <option value="za">Zamora</option>
+        <option value="mi">Mijas</option>
+        <option value="ben">Benalmádena</option>
+        <option value="cas">Casarabonela</option>
+        <option value="mon">Montejaque</option>
+      </optgroup>
+    </select>  
+    <input type="submit" value="enviar">
+  </form>
+  
+  
+  <h1>Ejercicio 5</h1>
+  <!-- Ejercicio 5.	Crea un  Cuadro de texto multilínea con estas características : 
+    El cuadro debe adquirir el foco en cuanto carga la página. Con un tamaño maximo de 
+    50 caracteres y anchura 10 columnas y 5 filas Debe tener de placeholder la cadena 
+    "Escribe tus impresiones" y debe ser obligatorios. (rellenar un texarea) -->
+    <form action="servicio.php" method="get">
+        Escribe un texto descriptivo: <br>
+        <textarea rows="5" cols="10" name="texto" placeholder="Escribe tus impresiones" required autofocus="autofocus"></textarea><br> 
+        <input type="submit" value="enviar"><br>
+      </form>
+      
+</body>
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libros>
+<libro>
+    <titulo>Ejemplo 1</titulo>
+    <autor>Autor 1</autor>
+    <editorial>Editorial 1</editorial>
+    <fecha>01/01/01</fecha>
+    <isbn>1</isbn>
+    <tapa>Dura</tapa>
+
+</libro>
+
+<libro>
+    <titulo>Ejemplo 2</titulo>
+    <autor>Autor 2</autor>
+    <editorial>Editorial 2</editorial>
+    <fecha>02/02/02</fecha>
+    <isbn>2</isbn>
+    <tapa>Dura</tapa>
+    
+</libro>
+
+<libro>
+    <titulo>Ejemplo 3</titulo>
+    <autor>Autor 3</autor>
+    <editorial>Editorial 3</editorial>
+    <fecha>03/03/03</fecha>
+    <isbn>3</isbn>
+    <tapa>Dura</tapa>
+    
+</libro>
+
+<libro>
+    <titulo>Ejemplo 4</titulo>
+    <autor>Autor 4</autor>
+    <editorial>Editorial 4</editorial>
+    <fecha>04/04/04</fecha>
+    <isbn>4</isbn>
+    <tapa>Dura</tapa>
+    
+</libro>
+
+<libro>
+    <titulo>Ejemplo 5</titulo>
+    <autor>Autor 5</autor>
+    <editorial>Editorial 5</editorial>
+    <fecha>05/05/05</fecha>
+    <isbn>5</isbn>
+    <tapa>Dura</tapa>
+</libro>
+</libros>

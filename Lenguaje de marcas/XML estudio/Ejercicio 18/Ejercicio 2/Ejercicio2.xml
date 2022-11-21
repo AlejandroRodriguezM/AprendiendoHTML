@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Ejercicio2.xsl"?>
+<libreria>
+    <libro>
+        <titulo>Physics-based animation</titulo>
+        <autor>Kenny Erleben</autor>
+        <editor>Charles River Media</editor>
+        <isbn>978-1584593804</isbn>
+        <precio>50.06</precio>
+        <numpaginas>220</numpaginas>
+    </libro>
+    <libro>
+        <titulo>Principios de seguridad informática</titulo>
+        <autor>Carlos Garre</autor>
+        <editor>Dykinson </editor>
+        <isbn>978-4614593407</isbn>
+        <precio>13.06</precio>
+        <numpaginas>195</numpaginas>
+    </libro>
+    <libro>
+        <titulo>Principios de la informatica</titulo>
+        <autor>Juan Mena</autor>
+        <editor>ECC </editor>
+        <isbn>397-4614593407</isbn>
+        <precio>3.06</precio>
+        <numpaginas>1950</numpaginas>
+    </libro>
+    <libro>
+        <titulo>Principios agricultura</titulo>
+        <autor>Marcos Guerrero</autor>
+        <editor>Pinguin </editor>
+        <isbn>472-4614593407</isbn>
+        <precio>1.06</precio>
+        <numpaginas>19</numpaginas>
+    </libro>
+    <libro>
+        <titulo>El arte de la guerra</titulo>
+        <autor>Paco antonio</autor>
+        <editor>Planeta </editor>
+        <isbn>205-4614593407</isbn>
+        <precio>6</precio>
+        <numpaginas>15</numpaginas>
+    </libro>
+</libreria>

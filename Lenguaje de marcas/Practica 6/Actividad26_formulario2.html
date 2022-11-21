@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="author" content="Alejandro Rodriguez Mena" />
+  <meta name="description" content="Formularios" />
+  <title> HTML formularios2 </title>
+</head>
+
+<body>
+  <h1 style="text-align:left;"><strong> Restaurante playamar</strong></h1>
+  <h2 style="text-align:left;">Haz tu reserva</h2>
+  <p style="margin: 0px;"><label for="Nombre">Nombre: </label><input type="text" name="Nombre" id="Nombre"></p>
+  <p style="margin: 0px;"><label for="email">Correo electronico: </label><input type="text" name="email" id="email"></p>
+  <p style="margin: 0px;"><label for="movil">Telefono: </label><input type="text" name="email" id="movil"></p>
+  <p style="margin: 0px;">Fecha de reserva<input type="date" name="timeset"></p>
+  <!--The date input type is not supported in all browsers. Please be sure to test, and consider using a polyfill.-->
+  <p style="margin: 0px;">Franja horaria
+    <select name="menu" style="background-color:gainsboro;">
+      <option>13:00 -- 14:00</option>
+    </select>
+  </p>
+  <p style="margin: 0px;">Comensales (min 1, max 10):
+    <select name="menu">
+      <option selected>&nbsp;</option>
+      <option value="1">Escoja la cantidad de Comensales</option>
+      <option value="1">opcion uno</option>
+      <option value="2">opcion dos</option>
+      <option value="3">Opción tres</option>
+      <option value="4">Opción cuatro</option>
+      <option value="5">Opción cinco</option>
+      <option value="6">Opción seis</option>
+      <option value="7">Opción siete</option>
+      <option value="8">Opción ocho</option>
+      <option value="9">Opción nuevo</option>
+      <option value="10">Opción diez</option>
+    </select>
+  <p style="margin: 0px;"><label for="demanda">Demandas especiales</label></p>
+  <p style="margin: 0px;"><textarea name="Mensaje" rows="4" id="demanda" placeholder="alergias, tronas, ..."></textarea></p>
+  <p style="margin: 0px;"><input type="submit" value="Enviar"></p>
+</body>
+</html>

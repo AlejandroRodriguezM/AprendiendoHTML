@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+  <title>Formulario</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <form>
+    <table>
+      <tr>
+        <th>Nombre:</th>
+        <td><input type="text" name="nombre" /></td>
+      </tr>
+      <tr>
+        <th>E-Mail:</th>
+        <td><input type="emAIL" name="email"></td>
+      </tr>
+      <tr>
+        <th for="mensaje">Mensaje:</th>
+        <td><textarea name="mensaje"></textarea></td>
+      </tr>
+      <tr>
+        <th>Sexo:</th>
+        <td>
+          
+          <label>Masculino</label>
+          <input type="radio" name="genero" value="varon">
+          <label>Femenino</label>
+          <input type="radio" name="genero" value="mujer">
+        </td>
+      </tr>
+      <tr>
+        <th>Color preferido:</th>
+        <td><input type="checkbox" name="color" value="rojo"><label>Rojo</label><br>
+          <input type="checkbox" name="color" value="verde"><label>Verde</label><br>
+          <input type="checkbox" name="color" value="azul"><label>Azul</label>
+        </td>
+      </tr>
+      <tr>
+        <th>Acepto los términos:</th>
+        <td>
+          <input type="checkbox" name="aceptar" value="aceptar">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="centrado">
+          <div class="button">
+            <button>Enviar</button>
+            <button>Limpiar</button>
+        </div>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</htlm>

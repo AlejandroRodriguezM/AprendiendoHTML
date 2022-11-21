@@ -1,0 +1,29 @@
+table{
+    border:#333 1px solid;
+    width: 450px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    border-collapse: collapse;
+}
+
+tr:hover {
+    background-color: #FFFF66;
+    color: #333;
+}
+
+td.coin {
+    text-align: left;
+    color:white;
+    background-color: #8000ff;
+}
+
+td.value {
+    color:white;
+    background-color: #8000ff;
+}
+
+tbody.yellow {
+    background-color:#FFFFCC;
+}
