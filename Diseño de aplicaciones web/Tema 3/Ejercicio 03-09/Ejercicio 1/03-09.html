@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>EJERCICIO 1</h1>
+  <h2>Ejemplo 1</h2>
+  <?xml version="1.0" standalone="no"?>
+  <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <style>
+        #MyRect {
+          stroke: black;
+          fill: red;
+        }
+
+      </style>
+    </defs>
+    <rect x="10" height="180" y="10" width="180" id="MyRect" />
+  </svg>
+
+
+  <h2>Ejemplo 2</h2>
+  <svg viewBox="-100 -100 310 310" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+    <defs>
+      <style>
+        #amarillo1:hover {
+          stroke: #ffffAA;
+        }
+
+        #amarillo2:hover {
+          stroke: #8e8e46;
+        }
+
+        #amarillo3:hover {
+          stroke: #4fa96f;
+        }
+
+        #amarillo4:hover {
+          stroke: orange;
+        }
+
+        #amarillo5:hover {
+          stroke: #004faa;
+        }
+
+      </style>
+
+    </defs>
+    <circle cx="100" cy="100" r="100" stroke="darkorange" fill="transparent" stroke-width="15" id="amarillo5" />
+    <circle cx="100" cy="100" r="80" stroke="orange" fill="transparent" stroke-width="12" id="amarillo1" />
+    <circle cx="100" cy="100" r="60" stroke="#EEEE00" fill="transparent" stroke-width="9" id="amarillo3" />
+    <circle cx="100" cy="100" r="40" stroke="#ffff00" fill="transparent" stroke-width="6" id="amarillo2" />
+    <circle cx="100" cy="100" r="20" stroke="#ffff77" fill="transparent" stroke-width="3" id="amarillo4" />
+  </svg>
+
+  <h2>Ejemplo 3</h2>
+  <svg width="400" height="350" xmlns="http://www.w3.org/2000/svg" viewBox="0 -100 400 200">
+    <path id="my_path" d="M 20,20 C 80,60 100,40 120,20" fill="transparent" />
+    <text>
+      <textPath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#my_path">
+        Viva el Barcelona
+      </textPath>
+    </text>
+    <style>
+      text {
+        dominant-baseline: hanging;
+        font: 28px Verdana, Helvetica, Arial, sans-serif;
+      }
+
+    </style>
+  </svg>
+
+  <h2>Ejemplo 4</h2>
+  <svg width="350" height="60" xmlns="http://www.w3.org/2000/svg">
+    <text> This is <tspan font-weight="bold" fill="red"> bold and red</tspan> </text>
+    <style>
+      text {
+        dominant-baseline: hanging;
+        font: 28px Verdana, Helvetica, Arial, sans-serif;
+      }
+
+    </style>
+  </svg>
+
+  <h1>EJERCICIO 2</h1>
+  <!-- cuadrado -->
+  <style>
+    #rectangulo:hover {
+      stroke: green;
+      fill: green;
+    }
+
+  </style>
+  <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <style>
+        #rectangulo {
+          stroke: cyan;
+          fill: violet;
+        }
+
+      </style>
+    </defs>
+    <rect x="10" height="180" y="10" width="180" id="rectangulo" />
+  </svg>
+  <style>
+    #triangulo:hover {
+      stroke: green;
+      fill: green;
+    }
+
+  </style>
+  <!--   triangulo -->
+  <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <style>
+        #triangulo {
+          stroke: cyan;
+          fill: orange;
+        }
+
+      </style>
+    </defs>
+    <polygon points="100,10 190,190 10,190" stroke="purple" stroke-width="2" id="triangulo" />
+  </svg>
+
+  <!--   circulo -->
+  <style>
+    #circulo:hover {
+      stroke: green;
+      fill: green;
+    }
+
+  </style>
+  <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <style>
+        #circulo {
+          stroke: cyan;
+          fill: red;
+        }
+
+      </style>
+    </defs>
+    <circle cx=100 cy=100 r=90 stroke="blue" stroke-width=2 id="circulo">
+  </svg>
+
+  <h1>EJERCICIO 3</h1>
+
+  <h1>EJERCICIO 4 </h1>
+  <svg width="350" height="60" xmlns="http://www.w3.org/2000/svg">
+    <text> IESPLAYAMAR </text>
+    <style>
+      text {
+        dominant-baseline: hanging;
+        font: 25px Georgia, serif;
+      }
+
+    </style>
+  </svg>
+
+  <h1>EJERCICIO 5</h1>
+  <svg width="350" height="60" xmlns="http://www.w3.org/2000/svg" id="francia">
+    <rect width="140" height="25" x="0" fill="black" />
+    <text>
+      <tspan font-weight="bold" fill="#DC2432 ">FR</tspan>
+      <tspan font-weight="bold" fill="white ">AN</tspan>
+      <tspan font-weight="bold" fill="#0f2493 ">CIA</tspan>
+    </text>
+    <style>
+      #francia text {
+        dominant-baseline: hanging;
+        font: 25px Georgia, serif;
+        fill: black;
+        background-color: black;
+      }
+
+    </style>
+  </svg>
+
+  <h1>EJERCICIO 6</h1>
+  <svg width="350" height="60" xmlns="http://www.w3.org/2000/svg" id="espana">
+    <rect width="60" height="35" x="0" fill="red" id="rojo1" />
+    <rect width="60" height="35" x="60" fill="yellow" id="amar1" />
+    <rect width="65" height="35" x="120" fill="red" id="rojo2" />
+
+    <text>
+      <tspan font-weight="bold" fill="black">E</tspan>
+      <tspan font-weight="bold" fill="black">S</tspan>
+      <tspan font-weight="bold" fill="black">P</tspan>
+      <tspan font-weight="bold" fill="black">A</tspan>
+      <tspan font-weight="bold" fill="black">Ñ</tspan>
+      <tspan font-weight="bold" fill="black">A</tspan>
+    </text>
+
+    <style>
+      #espana trspan:hover {
+        font-size: 70px;
+        fill: black;
+      }
+
+    </style>
+    <style>
+      #espana trspan {
+        dominant-baseline: hanging;
+        font: 45px Arial, serif;
+        fill: black;
+        background-color: black;
+      }
+
+    </style>
+  </svg>
+
+
+
+
+
+</body>
+</html>
