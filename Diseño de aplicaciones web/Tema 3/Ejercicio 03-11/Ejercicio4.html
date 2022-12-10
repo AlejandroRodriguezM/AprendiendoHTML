@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Ejercicio 4</h1>
+    <!-- <svg width="500" height="500">
+        <ellipse cx="100" cy="100" rx="50" ry="50" fill="red" id="ellipse1" onmouseover="moverIzquierda(this)"></ellipse>
+        <ellipse cx="200" cy="100" rx="50" ry="50" fill="blue" id="ellipse2" onmouseover="moverIzquierda(this)"></ellipse>
+        <ellipse cx="300" cy="100" rx="50" ry="50" fill="green" id="ellipse3" onmouseover="moverIzquierda(this)"></ellipse>
+        <ellipse cx="400" cy="100" rx="50" ry="50" fill="yellow" id="ellipse4" onmouseover="moverIzquierda(this)"></ellipse>
+        <ellipse cx="500" cy="100" rx="50" ry="50" fill="pink" id="ellipse5" onmouseover="moverIzquierda(this)"></ellipse>
+    </svg>
+    Modifica el anterior svg para que al hacerle click cada forma rote sobre si misma -->
+
+    <svg width="500" height="500">
+        <ellipse cx="100" cy="100" rx="50" ry="50" fill="red" id="ellipse1" onclick="rotar(this)"></ellipse>
+        <ellipse cx="200" cy="100" rx="50" ry="50" fill="blue" id="ellipse2" onclick="rotar(this)"></ellipse>
+        <ellipse cx="300" cy="100" rx="50" ry="50" fill="green" id="ellipse3" onclick="rotar(this)"></ellipse>
+        <ellipse cx="400" cy="100" rx="50" ry="50" fill="yellow" id="ellipse4" onclick="rotar(this)"></ellipse>
+        <ellipse cx="500" cy="100" rx="50" ry="50" fill="pink" id="ellipse5" onclick="rotar(this)"></ellipse>
+    </svg>
+
+    <script>
+        function rotar(elipse){
+            elipse.setAttribute("transform", "rotate(45)");
+        }
+    </script>
+
+    
+
+</body>
+
+</html>

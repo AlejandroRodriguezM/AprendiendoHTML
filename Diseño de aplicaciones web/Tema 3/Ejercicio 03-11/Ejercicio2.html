@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejercicio 2</h1>
+    <!-- Crea un svg con 5 ellipses con los mismos focos que cuando se pulsen en ellas crezcan de manera diferente.
+animate + radios -->
+
+    <svg width="500" height="500">
+        <ellipse cx="100" cy="100" rx="50" ry="50" fill="red" id="ellipse1" onclick="cambiarRadio(this)"></ellipse>
+        <ellipse cx="200" cy="100" rx="50" ry="50" fill="blue" id="ellipse2" onclick="cambiarRadio(this)"></ellipse>
+        <ellipse cx="300" cy="100" rx="50" ry="50" fill="green" id="ellipse3" onclick="cambiarRadio(this)"></ellipse>
+        <ellipse cx="400" cy="100" rx="50" ry="50" fill="yellow" id="ellipse4" onclick="cambiarRadio(this)"></ellipse>
+        <ellipse cx="500" cy="100" rx="50" ry="50" fill="pink" id="ellipse5" onclick="cambiarRadio(this)"></ellipse>
+    </svg>
+
+    <script>
+        function cambiarRadio(ellipse){
+            ellipse.setAttribute("rx", "100");
+            ellipse.setAttribute("ry", "100");
+        }
+    </script>
+
+<!-- Exactamente no se que pide, asi que hago 2 ejemplos diferentes  -->
+<!-- <svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="100" cy="100" rx="50" ry="50" fill="red" id="ellipse1">
+        <animate attributeName="rx" from="50" to="100" dur="2s" begin="ellipse1.click" fill="freeze" />
+        <animate attributeName="ry" from="50" to="100" dur="2s" begin="ellipse1.click" fill="freeze" />
+    </ellipse>
+    <ellipse cx="200" cy="100" rx="50" ry="50" fill="red" id="ellipse2">
+        <animate attributeName="rx" from="50" to="100" dur="2s" begin="ellipse2.click" fill="freeze" />
+        <animate attributeName="ry" from="50" to="100" dur="2s" begin="ellipse2.click" fill="freeze" />
+    </ellipse>
+    <ellipse cx="300" cy="100" rx="50" ry="50" fill="red" id="ellipse3">
+        <animate attributeName="rx" from="50" to="100" dur="2s" begin="ellipse3.click" fill="freeze" />
+        <animate attributeName="ry" from="50" to="100" dur="2s" begin="ellipse3.click" fill="freeze" />
+    </ellipse>
+    <ellipse cx="400" cy="100" rx="50" ry="50" fill="red" id="ellipse4">
+        <animate attributeName="rx" from="50" to="100" dur="2s" begin="ellipse4.click" fill="freeze" />
+        <animate attributeName="ry" from="50" to="100" dur="2s" begin="ellipse4.click" fill="freeze" />
+    </ellipse>
+    <ellipse cx="500" cy="100" rx="50" ry="50" fill="red" id="ellipse5">
+        <animate attributeName="rx" from="50" to="100" dur="2s" begin="ellipse5.click" fill="freeze" />
+        <animate attributeName="ry" from="50" to="100" dur="2s" begin="ellipse5.click" fill="freeze"
+        />
+    </ellipse>
+</svg> -->
+</body>
+</html>
