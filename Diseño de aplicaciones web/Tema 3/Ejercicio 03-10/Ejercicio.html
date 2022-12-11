@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <svg width="200" height="200" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+
+        <polygon points="60,30 90,90 30,90">
+
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 60 70" to="360 60 70"
+                dur="10s" repeatCount="indefinite" />
+
+            <animateTransform attributeName="transform" attributeType="XML" type="scale" from="0 0" to="10 10" dur="10s"
+                repeatCount="indefinite" />
+
+        </polygon>
+
+        <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+            <style>
+                .small {
+                    font: italic 13px sans-serif;
+                }
+
+                .heavy {
+                    font: bold 30px sans-serif;
+                }
+
+                .Rrrrr {
+                    font: italic 40px serif;
+                    fill: red;
+                }
+            </style>
+
+            <text x="20" y="35" class="small">El
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 60 70"
+                    to="360 60 70" dur="5s" repeatCount="indefinite" />
+
+            </text>
+            <text x="40" y="35" class="heavy">IES Playamar</text>
+            <text x="55" y="55" class="small">es</text>
+            <text x="65" y="55" class="Rrrrr">Genial!</text>
+        </svg>
+    </svg>
+
+
+
+    <svg width="100" height="100 viewBox=" 0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100" height="100" fill="red">
+            <animate attributeName="rx" values="0;50;0" dur="2s" repeatCount="indefinite" />
+        </rect>
+    </svg>
+
+    <br>
+
+    <svg width="220" height="100" viewBox="0 0 220 100" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" stroke="red" width="100" height="100">
+
+            <animate attributeName="width" from="0" to="100" dur="4s" repeatCount="indefinite" />
+
+            <animate attributeName="x" values="0;120;0" dur="4s" repeatCount="indefinite" />
+
+            <animate attributeName="fill" values="ff0000;00ff00;0000ff;ff0000" dur="2s" repeatCount="indefinite" />
+
+            <animate attributeName="stroke-width" from="1" to="3" dur="2s" repeatCount="indefinite" />
+
+        </rect>
+
+    </svg>
+    <svg width="350" height="60" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <style>
+                text {
+                    dominant-baseline: hanging;
+                    font: 28px Verdana, Helvetica, Arial, sans-serif;
+                }
+            </style>
+        </defs>
+        <text> This is bold and red
+            <animate attributeName="rotate" Values="0;180;0" dur="4s" repeatCount="indefinite" />
+
+        </text>
+
+    </svg>
+    <br>
+    <svg viewBox="-100 -100 310 310" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+        <ellipse cx="75" cy="75" rx="25" ry="75" stroke="orange" fill="transparent" stroke-width="5">
+
+            <animate attributeName="ry" Values="75;25;75" dur="4s" repeatCount="indefinite" />
+
+            <animate attributeName="rx" Values="25;75;25" dur="4s" repeatCount="indefinite" />
+
+            <animate attributeName="fill" Values="ff8800;ff0000;ffff00;ff8800" dur="4s" repeatCount="indefinite" />
+
+        </ellipse>
+
+
+    </svg>
+    <br>
+    <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+        <path fill="none" stroke-width="2" stroke="lightgrey"
+            d="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+        <circle r="5" fill="red">
+            <animateMotion dur="10s" repeatCount="indefinite"
+                path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+        </circle>
+
+        <text style=" font: 15px Georgia"> Hola
+
+            <animateMotion dur="10s" repeatCount="indefinite"
+                path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+            <animate attributeName="rotate" Values="0;359" dur="10s" repeatCount="indefinite" />
+        </text>
+
+    </svg>
+
+    <br>
+    <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+        <path fill="none" stroke-width="2" stroke="lightgrey"
+            d="M 21.6 14.4 C 50.4 14.4 28.8 93.6 129.6 64.8 C 14.4 50.4 122.4 43.2 86.4 14.4 C 50.4 86.4 50.4 -7.2 21.6 14.4z" />
+        <circle r="5" fill="red">
+            <animateMotion dur="10s" repeatCount="indefinite"
+                path="M 21.6 14.4 C 50.4 14.4 28.8 93.6 129.6 64.8 C 14.4 50.4 122.4 43.2 86.4 14.4 C 50.4 86.4 50.4 -7.2 21.6 14.4z" />
+        </circle>
+
+        <text style=" font: 15px Georgia"> Hola
+
+            <animateMotion dur="10s" repeatCount="indefinite"
+                path="M 21.6 14.4 C 50.4 14.4 28.8 93.6 129.6 64.8 C 14.4 50.4 122.4 43.2 86.4 14.4 C 50.4 86.4 50.4 -7.2 21.6 14.4z" />
+            <animate attributeName="rotate" Values="0;359" dur="10s" repeatCount="indefinite" />
+        </text>
+
+    </svg>
+
+    <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+
+
+</body>
+
+</html>
