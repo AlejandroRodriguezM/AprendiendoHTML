@@ -1,0 +1,71 @@
+<svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg"
+width="200" height="200" >
+
+ <path
+ fill="none"
+ stroke="lightgrey"
+ d="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+
+ <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada"> 
+ <circle r="5" fill="red">
+ <animateMotion
+  dur="10s"
+  repeatCount="indefinite"
+  path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+ </circle>
+ </a>
+
+ <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada"> 
+    <circle r="5" fill="yellow" >
+    
+    <animate 
+    attributeName="fill";
+    Values="FFFFFF;FFFFFF";
+    begin="0s";
+    dur="2s";
+    />
+
+    <animate 
+    attributeName="fill";
+    Values="FFFFFF;FFFF00";
+    begin="2s";
+    dur="2s";
+    />
+
+    <animateMotion
+     dur="10s"
+     begin="2s"
+     repeatCount="indefinite"
+     path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+    </circle>
+    </a>
+
+
+
+<a href="https://es.wikipedia.org/wiki/Wikipedia:Portada"> 
+   
+    <circle r="5" fill="yellow" >
+    
+    <animate 
+    attributeName="fill";
+    Values="FFFFFF;FFFFFF";
+    begin="0s";
+    dur="2s";
+    />
+
+    <animate 
+    attributeName="fill";
+    Values="FFFFFF;FFFF00";
+    begin="2s";
+    dur="2s";
+    />
+
+    <animateMotion
+     dur="10s"
+     begin="2s"
+     repeatCount="indefinite"
+     path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+    </circle>
+    </a>
+
+</svg>

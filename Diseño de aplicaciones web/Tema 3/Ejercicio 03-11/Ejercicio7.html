@@ -7,17 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-
-<!-- crea un rectangulo morado y debajo uno verde pegado a este, con un texto en medio que al pulsar en el texto, empiece a girar en el rectangulo  -->
-
-    <h1>Ejercicio 7</h1>
-    <svg width="200" height="200">
-        <rect x="50" y="50" width="50" height="50" fill="#009933" id="rect1"/>
-        <rect x="100" y="50" width="50" height="50" fill="#993399" id="rect2"/>
-        <text x="75" y="75" font-size="20" id="text">Click me!</text>
-        <animateTransform attributeType="XML" attributeName="transform" type="rotate" from="0 75 75" to="360 75 75" dur="2s" repeatCount="indefinite"/>
-     </svg>
-
-    
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1000px" height="1000px" viewBox=" -100 -100 400 400"
+> 
+    <defs>
+        <style>
+         text{ font: 20px georgia;}
+        </style>
+    </defs>
+    <rect id="risa" x="0" y="0" width="150" height="50" fill="purple" >
+    </rect>
+    <rect id="risa" x="0" y="49" width="150" height="50" fill="green" >
+    </rect>
+    <text id="risa" x="40" y="49" fill="aqua">Malaga!
+    <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            from="0 80 38"
+            to="360 80 38"
+            begin="risa.click"
+            dur="5s"/>
+    </text>
+    </svg>
 </body>
 </html>
