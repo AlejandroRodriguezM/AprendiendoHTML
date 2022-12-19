@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Ejercicio 1</h1>
-    
+    <svg width="400" height="400">
+        <ellipse cx="50" cy="50" rx="30" ry="20" fill="red" onclick="growEllipse(this)">
+            <animate attributeName="rx" from="30" to="60" dur="1s" />
+            <animate attributeName="ry" from="20" to="40" dur="1s" />
+        </ellipse>
+        <ellipse cx="100" cy="50" rx="30" ry="20" fill="orange" onclick="growEllipse(this)">
+            <animate attributeName="rx" from="30" to="50" dur="1s" />
+            <animate attributeName="ry" from="20" to="30" dur="1s" />
+        </ellipse>
+        <ellipse cx="150" cy="50" rx="30" ry="20" fill="yellow" onclick="growEllipse(this)">
+            <animate attributeName="rx" from="30" to="40" dur="1s" />
+            <animate attributeName="ry" from="20" to="20" dur="1s" />
+        </ellipse>
+        <ellipse cx="200" cy="50" rx="30" ry="20" fill="green" onclick="growEllipse(this)">
+            <animate attributeName="rx" from="30" to="30" dur="1s" />
+            <animate attributeName="ry" from="20" to="10" dur="1s" />
+        </ellipse>
+        <ellipse cx="250" cy="50" rx="30" ry="20" fill="blue" onclick="growEllipse(this)">
+            <animate attributeName="rx" from="30" to="20" dur="1s" />
+            <animate attributeName="ry" from="20" to="20" dur="1s" />
+        </ellipse>
+    </svg>
+
+    <script>
+        function growEllipse(ellipse) {
+            ellipse.beginElement();
+        }
+    </script>
+
 </body>
+
 </html>

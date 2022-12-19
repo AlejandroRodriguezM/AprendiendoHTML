@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- crea un rectangulo morado y debajo uno verde pegado a este, con un texto en medio que al pulsar en el texto, empiece a girar en el rectangulo  -->
+
+    <h1>Ejercicio 7</h1>
+    <svg width="200" height="200">
+        <rect x="50" y="50" width="50" height="50" fill="#009933" id="rect1"/>
+        <rect x="100" y="50" width="50" height="50" fill="#993399" id="rect2"/>
+        <text x="75" y="75" font-size="20" id="text">Click me!</text>
+        <animateTransform attributeType="XML" attributeName="transform" type="rotate" from="0 75 75" to="360 75 75" dur="2s" repeatCount="indefinite"/>
+     </svg>
+
+    
+</body>
+</html>

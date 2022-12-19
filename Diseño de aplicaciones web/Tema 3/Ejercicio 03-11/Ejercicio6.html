@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Crea un rectángulo con un javascript asociado a el que cuando se pulse se ponga medio transparente y salte un alert. -->
+    <h1>Ejercicio 6</h1>
+    <div></div>
+    <script>
+        var rect = document.createElement("div");
+        rect.style.width = "200px";
+        rect.style.height = "100px";
+        rect.style.backgroundColor = "red";
+
+        // Agrega el rectángulo al cuerpo del documento
+        document.body.appendChild(rect);
+
+        // Agrega un evento click al rectángulo que hace que se ponga medio transparente y muestra un alert
+        rect.addEventListener("click", function () {
+            rect.style.opacity = 0.5;
+            alert("Has pulsado el rectángulo!");
+        });
+    </script>
+
+</body>
+
+</html>

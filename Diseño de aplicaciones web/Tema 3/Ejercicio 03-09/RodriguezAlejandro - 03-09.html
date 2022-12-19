@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Ejercicio 1</h1>
+    <?xml version="1.0" standalone="no"?>
+    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <style>
+                #MyRect {
+                    stroke: black;
+                    fill: red;
+                }
+            </style>
+        </defs>
+        <rect x="10" height="180" y="10" width="180" id="MyRect" />
+    </svg>
+
+    #MyRect:hover {
+    stroke: black;
+    fill: blue;
+    }
+    <svg viewBox="-100 -100 310 310" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+        <defs>
+            <style>
+                #amarillo1:hover {
+                    stroke: #ffffAA;
+                }
+
+                #amarillo2:hover {
+                    stroke: #ffff66;
+                }
+
+                #amarillo3:hover {
+                    stroke: #FFFF00;
+                }
+
+                #amarillo4:hover {
+                    stroke: orange;
+                }
+
+                #amarillo5:hover {
+                    stroke: #AA5500;
+                }
+            </style>
+
+        </defs>
+        <circle cx="100" cy="100" r="100" stroke="darkorange" fill="transparent" stroke-width="15" id="amarillo5" />
+        <circle cx="100" cy="100" r="80" stroke="orange" fill="transparent" stroke-width="12" id="amarillo1" />
+        <circle cx="100" cy="100" r="60" stroke="#EEEE00" fill="transparent" stroke-width="9" id="amarillo3" />
+        <circle cx="100" cy="100" r="40" stroke="#ffff00" fill="transparent" stroke-width="6" id="amarillo2" />
+        <circle cx="100" cy="100" r="20" stroke="#ffff77" fill="transparent" stroke-width="3" id="amarillo1" />
+    </svg>
+
+    <svg width="350" height="60" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <style>
+                text {
+                    dominant-baseline: hanging;
+                    font: 28px Verdana, Helvetica, Arial, sans-serif;
+                }
+            </style>
+        </defs>
+        <text> This is bold and red </text>
+    </svg>
+
+    <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20,20 L180,20 M20,50 L180,50 M20,80 L180,80" stroke="grey" />
+        <text dominant-baseline="auto" x="30" y="20">Auto</text>
+        <text dominant-baseline="middle" x="30" y="50">Middle</text>
+        <text dominant-baseline="hanging" x="30" y="80">Hanging</text>
+    </svg>
+
+    <svg width="350" height="60" xmlns="http://www.w3.org/2000/svg">
+        <text> This is <tspan font-weight="bold" fill="red"> bold and red</tspan> </text>
+        <style>
+            text {
+                dominant-baseline: hanging;
+                font: 28px Verdana, Helvetica, Arial, sans-serif;
+            }
+        </style>
+    </svg>
+
+    <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+        <path id="my_path" d="M 20,20 C 80,60 100,40 120,20" fill="transparent" />
+        <text>
+            <textPath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#my_path">
+                Viva el Barcelona
+            </textPath>
+        </text>
+        <style>
+            text {
+                dominant-baseline: hanging;
+                font: 28px Verdana, Helvetica, Arial, sans-serif;
+            }
+        </style>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 -81.7708 216 84.77">
+        <path id="my_path" d="M 0 0 C 53 -89 98 -101 210 -44" stroke="transparent" stroke-width="3" fill="none" />
+        <text>
+            <textPath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#my_path">
+                Viva el Torremolinos
+            </textPath>
+        </text>
+    </svg>
+
+    <h1>Ejercicio 2</h1>
+    <style>
+        .cuadrado:hover,
+        .triangulo:hover,
+        .circulo:hover {
+            fill: green;
+        }
+    </style>
+    <svg width="500" height="500" class="figuras">
+        <rect class="cuadrado" x="10" y="100" width="100" height="100" fill="rgb(0, 153, 255)" />
+        <polygon class="triangulo" points="200,10 250,110 150,110" stroke="black" fill="orange" stroke-width="1" />
+        <circle class="circulo" cx="200" cy="200" r="50" stroke="black" stroke-width="1" fill="red" />
+    </svg>
+
+    <h1>Ejercicio 3</h1>
+    <style>
+        .circulo:hover {
+            fill: rgba(253, 102, 102, 0.945);
+        }
+
+        .cuadrado:hover {
+            fill: rgb(199, 233, 255);
+        }
+
+        .triangulo:hover {
+            fill: rgb(248, 207, 129);
+        }
+    </style>
+    <svg width="500" height="500">
+        <rect class="cuadrado" x="10" y="100" width="100" height="100" fill="rgb(0, 153, 255)" />
+        <polygon class="triangulo" points="200,10 250,110 150,110" stroke="black" fill="orange" stroke-width="1" />
+        <circle class="circulo" cx="200" cy="200" r="50" stroke="black" stroke-width="1" fill="red" />
+    </svg>
+
+    <h1>Ejercicio 4</h1>
+
+    <svg width="500" height="500">
+        <text x="10" y="50" font-family="Georgia" font-size="25">IESPLAYAMAR</text>
+    </svg>
+
+    <h1>Ejercicio 5</h1>
+    <svg width="500" height="500">
+        <text x="10" y="50" font-family="Georgia" font-size="25">
+            <tspan fill="#DC2432">FR</tspan>
+            <tspan fill="grey">AN</tspan>
+            <tspan fill="#0f2493">CIA</tspan>
+        </text>
+    </svg>
+
+    <h1>Ejercicio 6</h1>
+
+    <!-- Como no se si quieres cada palabra o cada division de palabras por colores, he creado los 2. -->
+    <!-- <style>
+        .tspan1:hover{
+            font-size: 45px;
+        }
+    </style>
+    <svg width="500" height="500">
+        <text x="10" y="50" font-family="Georgia" font-size="25">
+            <tspan class="tspan1" fill="#DC2432">F
+            </tspan>
+            <tspan class="tspan1" fill="#DC2432">R
+            </tspan>
+            <tspan class="tspan1" fill="grey">A
+            </tspan>
+            <tspan class="tspan1" fill="grey">N
+            </tspan>
+            <tspan class="tspan1" fill="#0f2493">C
+            </tspan>
+            <tspan class="tspan1" fill="#0f2493">I
+            </tspan>
+            <tspan class="tspan1" fill="#0f2493">A
+            </tspan>
+        </text>
+    </svg> -->
+
+
+    <style>
+        .tspan1:hover {
+            font-size: 45px;
+        }
+
+        .tspan2:hover {
+            font-size: 45px;
+        }
+
+        .tspan3:hover {
+            font-size: 45px;
+        }
+    </style>
+
+    <svg width="500" height="500">
+        <text x="10" y="50" font-family="Georgia" font-size="25">
+            <tspan class="tspan1" fill="#DC2432">FR
+            </tspan>
+            <tspan class="tspan2" fill="grey">AN
+            </tspan>
+            <tspan class="tspan3" fill="#0f2493">CIA
+            </tspan>
+        </text>
+    </svg>
+
+    <h1>Ejercicio 7</h1>
+    <!-- Este ejercicio no se ve bien cuando se agrupa con el resto de ejercicios, dejare el original aparte. -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="-3 -81.7708 216 84.77">
+        <path id="my_path" d="M 0 0 C 53 -89 98 -101 210 -44" stroke="transparent" stroke-width="3" fill="none" />
+        <text>
+            <textPath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#my_path">
+                I.E.S PLAYAMAR
+            </textPath>
+        </text>
+    </svg>
+
+
+</body>
+
+</html>
