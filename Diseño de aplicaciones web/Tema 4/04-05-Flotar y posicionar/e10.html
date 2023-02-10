@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css"> 
+     .cuadrado-rosa {
+          position: absolute;
+          border: solid 1px black; margin: 10px; 
+          left: 50px;
+          top: 50px;
+          width: 100px;
+          height: 100px;
+          background-color:#FFAAAA;
+          z-index: 3;
+        }
+      
+        .cuadrado-celeste {
+          position: absolute;
+          border: solid 1px black; margin: 10px; 
+          left: 70px;
+          top: 70px;
+          width: 120px;
+          height: 120px;
+          background-color: #AAAAFF;
+          z-index: 2;
+        }
+      
+        .cuadrado-verde {
+          position: absolute;
+          border: solid 1px black; margin: 10px; 
+          left: 100px;
+          top: 80px;
+          width: 140px;
+          height: 140px;
+          background-color: #AAFFAA;
+          z-index: 1;
+        }
+</style>
+</head>
+<body>
+    <div class="cuadrado-rosa"></div>
+    <div class="cuadrado-celeste"></div>
+    <div class="cuadrado-verde"></div>
+
+    <button onclick="moverArriba()">Mover Arriba</button>
+    <button onclick="moverAbajo()">Mover Abajo</button>
+
+
+  <script>
+      var state = 1;
+      function moverArriba() {
+        var squares = document.querySelectorAll(".cuadrado-rosa, .cuadrado-celeste, .cuadrado-verde");
+        for (var i = 0; i < squares.length; i++) {
+          squares[i].style.zIndex = state;
+        }
+        state = (state === 1) ? 2 : 1;
+      }
+      function moverAbajo() {
+        var squares = document.querySelectorAll(".cuadrado-rosa, .cuadrado-celeste, .cuadrado-verde");
+        for (var i = 0; i < squares.length; i++) {
+          squares[i].style.zIndex = state;
+        }
+        state = (state === 1) ? 2 : 1;
+      }
+    </script> 
+    </body>
+</html>

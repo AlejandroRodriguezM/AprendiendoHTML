@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+    h1 {
+      font-family:Georgia;
+      font-size:50px;
+      text-align:center;
+      text-decoration: none;}
+
+    .text5 {
+      text-align:center;
+      text-shadow: #eb2e11 1px -10px 5px , 1px 10px 5px #00f; }
+
+    .text5{ box-shadow: 10px 10px 5px azul; } 
+    .text6{ box-shadow: 10px 10px 5px rojo; }
+
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Añade este código y rellena la clase que falta y la función para que al pasar 
+    el ratón por encima se intercambien las sombras.  
+    (comprueba que el hover no funciona con este atributo) -->
+    
+<h1 onmouseleave="cambioclase('text5')" onmouseenter="cambiorojo('text6')" class="text5" id="cambio">!!! Azul y rojo con hover¡¡¡ </h1> 
+<script> function cambioclase(clase){ document.getElementById("cambio").className = clase; } function cambiorojo(clase){ document.getElementById("cambio").className = clase; } </script>
+
+
+
+
+
+
+
+
+  
+  </body>
+</html>
