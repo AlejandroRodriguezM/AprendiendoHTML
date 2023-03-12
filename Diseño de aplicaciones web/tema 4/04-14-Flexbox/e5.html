@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Por Alejandro Rodriguez-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caja-flex {
+            display: flex;
+            border: 1px solid blue;
+            width: 400px;
+            height: 80px;
+        }
+
+        .caja-flex>div {
+            width: 75px;
+            height: 50px;
+            background-color: aqua;
+            margin: 2px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 5.	Crea un flexbox con 10 divs y un numero en cada uno de ellos usa la propiedad 
+    order:i para que salgan en este orden 5,6,4,7,3,8,2,9,1,10 -->
+    <div class="caja-flex">
+        <div style="order:5">Hijo 3</div>
+        <div style="order:6">Hijo 8</div>
+        <div style="order:4">Hijo 7</div>
+        <div style="order:7">Hijo 2</div>
+        <div style="order:3">Hijo 4</div>
+        <div style="order:8">Hijo 9</div>
+        <div style="order:2">Hijo 6</div>
+        <div style="order:9">Hijo 1</div>
+        <div style="order:1">Hijo 5</div>
+        <div style="order:10">Hijo 10</div>
+
+    </div>
+
+</body>
+
+</html>

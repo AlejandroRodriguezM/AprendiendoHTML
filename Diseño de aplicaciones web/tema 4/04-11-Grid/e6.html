@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Por Alejandro Rodriguez-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: grid;
+      gap: 1px 1px;
+      background-color: azure;
+      grid-template-areas:
+        ". ."
+        ". ."
+        ". .";
+    }
+
+    .c1 {
+      grid-row: 100px;
+
+    }
+
+    .c2 {
+      grid-row: 150px;
+
+    }
+
+    .c3 {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .c4 {
+      grid-column: 1/3;
+      grid-row: 3;
+    }
+
+    .container>div {
+      font-weight: bolder;
+      padding: 20px;
+      background-color: rgb(209, 136, 110);
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Celdas interiores combinadas </h1>
+  <!-- En esta estructura realizada con el layout grid se trata de combinar grupos de celdas. 
+    En el código HTML las celdas con el texto celda xx son los elementos escritos como 
+    bloques div. La alineación del texto al centro es un estilo CSS com el color o el fondo. 
+    La linea entre celdas es un gap de 1px. Intenta logarar el mismo aspecto que la figura. -->
+  <div class="container">
+    <div class="c1">celda 1</div>
+    <div class="c2">celda 2</div>
+    <div class="c3">celda 3</div>
+    <div class="c4">celda 5</div>
+    <div class="c5">celda 4</div>
+
+
+  </div>
+</body>
+
+</html>

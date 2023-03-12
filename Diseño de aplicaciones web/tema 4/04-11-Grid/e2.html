@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Por Alejandro Rodriguez-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 1px 1px;
+      grid-template-areas:
+        "a1 a1 a1"
+        ". . ."
+        ". . .";
+
+      background-color: azure;
+    }
+
+
+    .container>div {
+      font-weight: bolder;
+      padding: 20px;
+      background-color: rgb(80, 141, 255);
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Ejercicio2 Tabla con cabecera</h1>
+  <!-- Trata de construir esta disposición tipo tabla usando el layout tipo grid. 
+    En el código HTML los elementos hijos son las celdas con el texto celda xx y estan 
+    escritos como bloques div. La alineación del texto al centro es un estilo CSS com el 
+    color o el fondo. La linea entre celdas es un gap de 1px. Intenta logarar el mismo 
+    aspecto que la figura.  -->
+
+  <div class="container">
+    <div style="grid-area: a1;">celda 1</div>
+    <div>celda 2</div>
+    <div class="a1">celda 3</div>
+    <div>celda 4</div>
+    <div class="a5">celda 5</div>
+    <div>celda 6</div>
+    <div>celda 7</div>
+  </div>
+</body>
+
+</html>

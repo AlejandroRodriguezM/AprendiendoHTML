@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Por Alejandro Rodriguez-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documento</title>
+  <style>
+    /*Ejemplo 1*/
+    .contenedor-flex-ejemplo1 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .contenedor-flex-ejemplo1 div {
+      flex-basis: 33%;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    @media (max-width:500px) {
+      .contenedor-flex-ejemplo1 div {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Ejercicio 1. Ejemplo1</h1>
+  <div class="contenedor-flex-ejemplo1">
+    <div>elemento 1 </div>
+    <div>elemento 2</div>
+    <div>elemento 3</div>
+  </div>
+</body>
+
+</html>

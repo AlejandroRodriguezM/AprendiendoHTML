@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Por Alejandro Rodriguez-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Ejemplo 1 */
+        .contenedor-flex {
+            display: flex;
+            align-items: center;
+            border: 1px solid blue;
+            height: 300px;
+        }
+
+        .contenedor-flex>div {
+            width: 75px;
+            padding: 10px;
+            margin: 10px;
+            background-color: aqua;
+        }
+
+        /* Ejemplo 2*/
+        #caja-flex {
+            display: flex;
+            justify-content: center;
+            width: 400px;
+            height: 300px;
+            border: 1px solid blue;
+        }
+
+        #caja-flex div {
+            margin-top: 16px;
+            width: 70px;
+            height: 70px;
+            border: 2px solid black;
+        }
+
+
+        /* Ejemplo 3 */
+        #contenedor {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 260px;
+            height: 150px;
+            border: 1px solid black;
+        }
+
+        #contenedor div {
+            width: 50px;
+            height: 50px;
+            border: 1px solid red;
+        }
+
+        /* Ejemplo 4 */
+        #contenedor {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            width: 260px;
+            height: 150px;
+            border: 1px solid black;
+        }
+
+        #contenedor div {
+            width: 50px;
+            height: 50px;
+            border: 1px solid red;
+        }
+
+        /* Ejemplo 5 */
+        .caja {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .caja {
+            display: flex;
+            flex-flow: column wrap;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>1. Realiza los ejemplos propuestos Ejemplos 1-5 </h1>
+    <!-- Ejemplo 1 -->
+    <p>Alineando los items</p>
+    <div class="contenedor-flex">
+        <div> Hijo 1 </div>
+        <div> Hijo 2 </div>
+        <div> Hijo 3 </div>
+    </div>
+
+    <!-- Ejemplo 2 -->
+    <h1>Propiedad justify-content </h1>
+    <div id="caja-flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <!-- Ejemplo 3 -->
+    <div id="contenedor">
+        <div>item A</div>
+        <div>item B</div>
+        <div>item C</div>
+        <div>item D</div>
+        <div>item E</div>
+        <div>item F</div>
+    </div>
+
+</body>
+
+</html>

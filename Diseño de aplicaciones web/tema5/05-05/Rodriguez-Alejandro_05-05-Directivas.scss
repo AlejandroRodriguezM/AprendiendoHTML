@@ -1,0 +1,107 @@
+// Ejercicio 1. Prueba los ejemplos de directivas @if
+//Por Alejandro Rodriguez Mena
+$animal: gato;
+
+p {
+    @if 1+1==2 {
+        border: 2px solid black
+    }
+
+    @if $animal==gato {
+        color: blue;
+    }
+
+    @else if $animal==perro {
+        color: red;
+    }
+
+    @else if $animal==caballo {
+        color: green;
+    }
+
+    @else {
+        color: black;
+    }
+}
+
+
+
+// Ejercicio 2. Prueba los ejemplos de directivas @each
+@each $animal in puma,
+sea-slug,
+egret {
+    .#{$animal}-icon {
+        background-image: url('/images/#{$animal}.png');
+    }
+}
+
+
+// Ejercicio 3. Prueba los ejemplos de directivas @for
+
+@for $i from 1 to 3 {
+    .todos-#{$i} {
+        width: 2em * $i;
+    }
+}
+
+@for $i from 1 through 3 {
+    .casitodos-#{$i} {
+        width: 2em * $i;
+    }
+}
+
+
+// Ejercicio 4. Prueba los ejemplos de directivas @while
+@while $i>0 {
+    .item-#{$i} {
+        width: 2em * $i;
+    }
+
+    $i: $i - 2;
+}
+
+.item-6 {
+    width: 12em;
+}
+
+.item-4 {
+    width: 8em;
+}
+
+.item-2 {
+
+    width: 4em;
+}
+
+
+// Ejercicio 5. Prueba los ejemplos de Directiva @media
+.sidebar {
+    width: 300px;
+
+    @media screen and (orientation: landscape) {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+
+// Ejercicio 6. Prueba los ejemplos de la Directiva @extend
+.alerta {
+    background: orange;
+    display: block;
+    font-weight: bold;
+}
+
+.alertaCritica {
+    @extend.alerta;
+    background: red;
+}
+
+.alerta {
+    @extend %plantilla;
+}

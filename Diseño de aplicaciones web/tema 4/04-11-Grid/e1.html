@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Por Alejandro Rodriguez-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 1px 1px;
+      grid-template-areas:
+        ". . .  "
+        ". . . "
+        ". . . ";
+
+      background-color: azure;
+    }
+
+
+    .container>div {
+      font-weight: bolder;
+      padding: 20px;
+      background-color: rgb(80, 255, 147);
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Ejercicio1 Tabla con grid</h1>
+
+  <!-- Trata de construir esta tabla usando el display de tipo grid. Los elementos con el texto 
+    celda 1, celda 2... son bloques div que irán escritos en ese orden y con una clase que 
+    alinea el texto al centro. El gap o separación entre celdas es de 1px. Lo importante 
+    del ejercicio es aplicar la estrucutra con el layout grid y que tenga este aspecto.  -->
+
+  <div class="container">
+    <div>celda 1</div>
+    <div>celda 2</div>
+    <div>celda 3</div>
+    <div>celda 4</div>
+    <div>celda 5</div>
+    <div>celda 6</div>
+    <div>celda 7</div>
+    <div>celda 8</div>
+    <div>celda 9</div>
+  </div>
+</body>
+
+</html>

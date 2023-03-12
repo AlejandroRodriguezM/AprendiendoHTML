@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Por Alejandro Rodriguez-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .cajaHor {
+      display: flex;
+      border: 1px solid blue;
+    }
+
+    .cajaHor div {
+      background-color: aqua;
+      margin: 2px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <p>Aqui flex-basis es un anchura</p>
+  <div class="cajaHor">
+    <div style="flex-grow: 1"> Hijo 1 </div>
+    <div style="flex-grow: 2"> Hijo 2 </div>
+    <div style="flex-grow: 1"> Hijo 3 </div>
+  </div>
+</body>
+
+</html>

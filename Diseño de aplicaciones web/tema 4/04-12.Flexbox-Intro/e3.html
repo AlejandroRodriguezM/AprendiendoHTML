@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Por Alejandro Rodriguez-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*nowrap*/
+    .contenedor-flex-ej3a {
+      width: 300px;
+      height: 150px;
+      background-color: rgb(29, 163, 42);
+      padding: 10px;
+      margin: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    .contenedor-flex-ej3a div {
+      width: 30px;
+      height: 50px;
+      background-color: rgb(185, 184, 184);
+      margin: 10px;
+      align-items: center;
+    }
+
+    /*wrap*/
+    .contenedor-flex-ej3b {
+      width: 300px;
+      height: 150px;
+      background-color: rgb(99, 16, 132);
+      padding: 10px;
+      margin: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .contenedor-flex-ej3b div {
+      width: 30px;
+      height: 30px;
+      background-color: rgb(185, 184, 184);
+      margin: 10px;
+      padding: 10px;
+      align-items: center;
+    }
+
+    /*wrap-reverse*/
+    .contenedor-flex-ej3c {
+      width: 300px;
+      height: 150px;
+      background-color: rgb(36, 173, 141);
+      padding: 10px;
+      margin: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap-reverse;
+    }
+
+    .contenedor-flex-ej3c div {
+      width: 30px;
+      height: 30px;
+      background-color: rgb(185, 184, 184);
+      margin: 10px;
+      padding: 10px;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>3. Crea un flexbox con los siguientes valores para flex-wrap </h1>
+  <!--wrap-->
+  <div class="contenedor-flex-ej3a">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+  </div>
+
+  <!--nowrap-->
+  <div class="contenedor-flex-ej3b">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+  </div>
+
+  <!--wrap-reverse-->
+  <div class="contenedor-flex-ej3c">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+  </div>
+
+</body>
+
+</html>

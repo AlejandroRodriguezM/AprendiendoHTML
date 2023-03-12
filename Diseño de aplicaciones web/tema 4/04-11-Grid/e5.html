@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Por Alejandro Rodriguez-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 1px 1px;
+      grid-template-areas:
+        "a1 a1 a1 a2 "
+        ". . . a2 ";
+
+      background-color: azure;
+    }
+
+
+    .container>div {
+      font-weight: bolder;
+      padding: 20px;
+      background-color: coral;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Otro sidebar</h1>
+  <!-- Trata de construir esta disposición con celdas unidas entre si para formar ese sidebar 
+    derecho con el texto celda2 y la cabecera cn el texto celda 1. Usa el layout tipo grid. 
+    En el código HTML las celdas con el texto celda xx son los elementos escritos como bloques 
+    div. La alineación del texto al centro es un estilo CSS com el color o el fondo. 
+    La linea entre celdas es un gap de 1px. Intenta logarar el mismo aspecto que la figura.  -->
+
+  <div class="container">
+    <div style="grid-area: a1;">celda 1</div>
+    <div>celda 2</div>
+    <div style="grid-area: a2;">celda 3</div>
+    <div>celda 4</div>
+    <div>celda 5</div>
+
+
+  </div>
+</body>
+
+</html>
