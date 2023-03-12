@@ -1,0 +1,65 @@
+/*Por Alejandro Rodriguez Mena - Ejercicio 8 - Crea un scss que genere este css con variables para las propiedades Globales y locales */
+
+/*div>.clase1,
+.clase2,
+.clase3 {
+    border-width: 10 px; // variable global
+    border-color: #fea; // variable local
+}
+
+div>.clase4,
+.clase5 {
+    border-width: 10 px; // variable global
+    border-color: #aef; // variable local
+}
+
+body>.clase6,
+.clase7,
+.clase8 {
+    border-width: 10 px; // variable global
+    border-color: #efa; // variable local
+}*/
+
+
+$border-width: 10 px;
+
+div> {
+
+    .clase1 {
+        border-width: $border-width;
+        $var_local: #fea;
+        color: $var_local;
+    }
+
+
+
+    .clase4 {
+        border-width: $border-width;
+        $var_local: #aef;
+        color: $var_local;
+    }
+}
+
+.clase2,
+.clase3 {
+    border-width: $border-width;
+    $var_local: #fea;
+    color: $var_local;
+}
+
+.clase5 {
+    border-width: $border-width;
+    $var_local: #aef;
+    color: $var_local;
+}
+
+body> {
+
+    .clase6,
+    .clase7,
+    .clase8 {
+        border-width: $border-width;
+        $var_local: #efa;
+        color: $var_local;
+    }
+}

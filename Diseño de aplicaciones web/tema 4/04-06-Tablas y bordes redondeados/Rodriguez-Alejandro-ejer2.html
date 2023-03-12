@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+    table {
+      border: 1px solid blue;
+      border-collapse: collapse;
+      font: normal 11px verdana, arial, helvetica, sans-serif;
+      color: #363636;
+      background: skyblue;
+    }
+    caption {
+      caption-side: bottom;
+      text-align: center;
+      font: bold 14px arial, helvetica, sans-serif;
+      background: transparent;
+      padding: 6px 4px 8px 0px;
+      color: #6f0325;
+      text-transform: uppercase;
+    }
+    td, th {
+      border: 3px solid blue;
+      padding: .4em;
+      color: #363636;
+    }
+    thead th {
+      font: bold 11px verdana, arial, helvetica, sans-serif;
+      border: 3px solid blue;
+      text-align: left;
+      background: #6f0325;
+      color: #FFFFFF;
+      padding-top:3px;
+    }
+    tfoot td {
+      border: 3px solid blue;
+      text-align:center;
+      background: #6f0325;
+      color: #FFFFFF;
+      padding-top:3px;
+    }
+    tbody td {
+      vertical-align: top;
+      text-align: left;
+    }
+    tr.fimpar {
+      background: pink;
+    }
+    tbody tr:hover {
+      background: #FFD800;
+      border: 1px solid blue;
+      color: #FFF;
+    }
+    tbody td a:link, tbody td a:visited {
+      background: transparent;
+      text-decoration: none;
+      color: #363636;
+    }
+    tbody td a:hover, tbody td a:active {
+      background: #C2F64D;
+      color: #363636;
+    }
+    </style>
+  <title>Document</title>
+</head>
+<body>
+  <table>
+    <caption>Distancias planetarias</caption>
+    <thead>
+      <tr>
+        <th>Planeta</th>
+        <th>Distancia desde la Tierra</th>
+        <th>Web</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td colspan="3">Astronom&iacute;a Gobierno de Espa&ntilde;a</td>
+      </tr>
+    </tfoot>
+    <tbody>
+    <tr class="fimpar">
+      <td>Venus</td>
+      <td>108 Millones de Kil&oacute;metros</td>
+      <td>
+        <a href="http://es.wikipedia.org/wiki/Venus_(planeta)">Web Venus</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Saturno</td>
+      <td>1.281 Millones de Kil&oacute;metros</td>
+      <td>
+        <a href="http://es.wikipedia.org/wiki/Saturno_(planeta)">Web Saturno</a>
+      </td>
+    </tr>
+    <tr class="fimpar">
+      <td>Urano</td>
+      <td>2.720 Millones de Kil&oacute;metros</td>
+      <td>
+        <a href="http://es.wikipedia.org/wiki/Urano_(planeta)">Web Urano</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Neptuno</td>
+      <td>4.504 Millones de Kil&oacute;metros</td>
+      <td>
+        <a href="http://es.wikipedia.org/wiki/Neptuno_(planeta)">Web Neptuno</a>
+  </td>
+  </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

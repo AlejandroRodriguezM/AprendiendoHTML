@@ -1,0 +1,52 @@
+/*Por Alejandro Rodriguez Mena - Ejercicio 1 - Prueba los ejemplos de Operadores y funciones*/
+
+/*menú horizontal de ancho fijo en el que todos los botones tengan el mismo ancho*/
+$width-menu: 500px;
+$num-botones: 10;
+
+.menu {
+    width: $width-menu;
+
+    .boton {
+        width: $width-menu / $num-botones;
+    }
+}
+
+/*Funciones*/
+$btn-bg-color: #ce4dd6;
+
+.menu {
+    .button {
+        background-color: $btn-bg-color;
+
+        &:hover {
+            background-color: lighten($btn-bg-color, 20%);
+        }
+
+        &:active {
+            background-color: darken($btn-bg-color, 20%);
+        }
+
+        &.disabled {
+            background-color: grayscale($btn-bg-color);
+        }
+    }
+}
+
+/* Contenido de fichero colors.scss */
+/*$color: #aaa;
+
+p {
+    em {
+        color: $color
+    }
+}*/
+
+/* Contenido de fichero test.scss */
+@import "colors";
+
+p.test {
+    em {
+        color: $color;
+    }
+}

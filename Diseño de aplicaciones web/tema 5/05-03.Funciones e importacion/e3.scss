@@ -1,0 +1,50 @@
+/*Por Alejandro Rodriguez Mena - Ejercicio 3 - Crea un ejemplo de Scss que para un color con una variable cree las clases que aparezcan con estas funciones y los muestre en un flex-item*/
+$color: #ce4dd6;
+$color-rba: rgb(206, 77, 214);
+$amount: 30%;
+$alpha: 0.3;
+$amount2: 1;
+
+.color {
+    color: $color;
+}
+
+.lighten {
+    color: lighten($color, $amount);
+}
+
+.darken {
+    color: darken($color, $amount);
+}
+
+.saturate {
+    color: saturate($color, $amount);
+}
+
+.desaturate {
+    color: desaturate($color, $amount);
+}
+
+.grayscale {
+    color: grayscale($color);
+}
+
+.complement {
+    color: complement($color);
+}
+
+.invert {
+    color: invert($color);
+}
+
+.rgba {
+    color: rgba($color-rba, $alpha);
+}
+
+.fade-in {
+    color: fade-in($color, $amount2);
+}
+
+.fade-out {
+    color: fade-out($color, $amount2);
+}

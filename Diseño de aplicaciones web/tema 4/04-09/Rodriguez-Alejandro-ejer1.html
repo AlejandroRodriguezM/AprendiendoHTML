@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      width: 30%;
+      height: 30%;
+    }
+
+    .grayscale0 {
+      filter: grayscale(0);
+    }
+
+    .grayscale1 {
+      filter: grayscale(1);
+    }
+
+    .saturate {
+      filter: saturate(100);
+    }
+
+    .brillo1 {
+      filter: brightness(.1);
+    }
+
+    .brillo2 {
+      filter: brightness(.8);
+    }
+
+    .contrast1 {
+      filter: contrast(0.2);
+    }
+
+    .contrast2 {
+      filter: contrast(.6);
+    }
+
+    .contrast3 {
+      filter: contrast(.9);
+    }
+
+    .sepia {
+      filter: sepia(.5);
+    }
+
+    .opacidad {
+      filter: opacity(0.6);
+    }
+
+    .invert {
+      filter: invert(1);
+    }
+
+    .hue_rotate90 {
+      filter: hue-rotate(90deg);
+    }
+
+    .drop_shadow {
+      filter: drop-shadow(3px 3px 3px #63109a);
+    }
+
+    .blur2 {
+      filter: blur(2px);
+    }
+
+    .bachdrop {
+      filter: drop-shadow(grayscale(100%));
+    }
+
+  </style>
+
+</head>
+
+<body>
+  La original <br>
+  <img src="flores.jpg" class="grayscale0" alt="flores"> <br>
+  Blanco y negro <br>
+  <img src="flores.jpg" class="grayscale1" alt="flores"> <br>
+  Saturación <br>
+  <img src="flores.jpg" class="saturate" alt="flores"> <br>
+  Brillo al 10 <br>
+  <img src="flores.jpg" class="brillo1" alt="flores"> <br>
+  Brillo al 80 <br>
+  <img src="flores.jpg" class="brillo2" alt="flores"> <br>
+  Contraste al 20 <br>
+  <img src="flores.jpg" class="contrast1" alt="flores"> <br>
+  Contraste al 60 <br>
+  <img src="flores.jpg" class="contrast2" alt="flores"> <br>
+  Contraste al 90 <br>
+  <img src="flores.jpg" class="contrast3" alt="flores"> <br>
+  Sepia <br>
+  <img src="flores.jpg" class="sepia" alt="flores">
+  <br>
+  Opacidad <br>
+  <img src="flores.jpg" class="opacidad" alt="flores">
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Degradado</title>
+  <style type="text/css">
+    .section_item {
+      height: auto;
+      max-width: calc(100vw - 30px);
+      margin: 15px;
+      padding: 10vw;
+      z-index: 1;
+      position: relative;
+      text-align:
+        center;
+    }
+
+    .flex-container {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-content: space-around;
+      -ms-flex-line-pack: distribute;
+      align-content: space-around;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .flex-item {
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+      -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+      align-self: auto;
+    }
+
+    .section_item p {
+      font-size: 18px;
+      font-size: 1rem;
+      color: #fff;
+      max-width: 700px;
+      line-height: 1.5;
+    }
+
+    /* Background colors */
+    .color-2 {
+      background: linear-gradient(180deg, #fff 5%, #009952 50%);
+    }
+
+    .color-3 {
+      background: linear-gradient(90deg, #009952 5%, #ff8c00 80%);
+    }
+
+    .color-4 {
+      background: linear-gradient(to right, yellow, orange);
+    }
+
+    .color-5 {
+      background: linear-gradient(to right,
+          red 20%,
+          orange 20% 40%,
+          yellow 40% 60%,
+          green 60% 80%,
+          blue 80%);
+    }
+
+    .color-6 {
+      background: radial-gradient(ellipse, rgba(32, 69, 251, 1) 30%, rgba(34, 193, 195, 1) 40%, rgba(32, 69, 251, 1) 70%);
+    }
+
+    .color-7 {
+      background: conic-gradient(from 45deg, orange, yellow, orange);
+    }
+
+  </style>
+</head>
+
+<body>
+  <section class="section_item flex-container color-2">
+    <h1 class="flex-item">!!! Verde ¡¡¡ </h1>
+  </section>
+  <section class="section_item flex-container color-3">
+    <h1 class="flex-item">!!! Piña ¡¡¡ </h1>
+  </section>
+  <section class="section_item flex-container color-4">
+    <h1 class="flex-item">Atardecer </h1>
+  </section>
+  <section class="section_item flex-container color-5">
+    <h1 class="flex-item">Arcoiris</h1>
+  </section>
+  <section class="section_item flex-container color-6" id="ellipseAzul">
+    <h1 class="flex-item">EllipseAzul</h1>
+  </section>
+  <section class="section_item flex-container color-7" id="conico">
+    <h1 class="flex-item">Conico</h1>
+  </section>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS.Degradados avanzados Textos y sombras.</title>
+  <style type="text/css">
+    h {
+      font-family: Georgia;
+      font-size: 50px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .text1 {
+      text-align: center;
+      text-shadow: 10px 5px 1px #ccc;
+      line-height: 1.5em;
+    }
+
+    .negativo {
+      text-shadow: -10px 1px 1px #ccc;
+      text-align: center;
+      line-height: 1.5em;
+    }
+
+    .text2 {
+      text-align: center;
+      text-shadow: 1px 10px 1px #f00;
+      line-height: 2em;
+    }
+
+    .text2Negativo {
+      text-align: center;
+      text-shadow: 0px -10px 1px #f00;
+      line-height: 2em;
+    }
+
+    .text3 {
+      text-align: center;
+      text-shadow: 0px 10px 5px green;
+      line-height: 2em;
+    }
+
+    .text4 {
+      text-align: center;
+      text-shadow: 0px 10px 5px purple;
+      line-height: 2em;
+    }
+
+    .text5 {
+      text-align: center;
+      text-shadow: #f00 10px 10px 5px, -10px -10px 5px #00f;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1 class="text1">!!! Sombra ¡¡¡ </h1>
+  <h1 class="negativo">!!! Sombra negativo¡¡¡ </h1>
+  <h1 class="text2" id="roja">!!! Sombra roja ¡¡¡ </h1>
+  <h1 class="text2Negativo">!!! Sombra roja negativo ¡¡¡ </h1>
+  <h1 class="text3">!!! Verde con blur¡¡¡ </h1>
+  <h1 class="text4">!!! Purpura con blur¡¡¡ </h1>
+  <h1 class="text5" id="azulrojo">Azul y rojo</h1>
+
+  <h1 onmouseleave="cambioclase('text4')" onmouseenter="cambiorojo('text5')" class="text5" id="cambio">Pasar aquí el ratón </h1>
+  <script> function cambioclase() {
+      document.getElementById("cambio").className = "text4";
+    } </script>
+</body>
+</html>

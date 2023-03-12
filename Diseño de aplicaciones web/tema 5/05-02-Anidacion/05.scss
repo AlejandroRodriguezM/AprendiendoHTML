@@ -1,0 +1,29 @@
+/*Por Alejandro Rodriguez Mena - Ejercicio 5 - Crea un scss que genere este css con el operador & */
+
+/*.clase21 {
+    border-width: 5px;
+    border-color: blue;
+}
+
+.clase21:hover {
+    border-width: 10px;
+    border-color: black;
+}
+
+.clase21:hover .clase211 {
+    color: red;
+}*/
+
+.clase21 {
+    border-width: 5px;
+    border-color: blue;
+
+    & :hover {
+        border-width: 10px;
+        border-color: black;
+
+        & .clase211 {
+            color: red;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+/*Por Alejandro Rodriguez Mena - Ejercicio 6 - Prueba los ejemplos de variables */
+a {
+  color: blue;
+  border: 1px solid black;
+  margin: 5px 0px 5px 0px;
+}
+
+p a {
+  color: blue;
+}
+p a.link {
+  color: green;
+}

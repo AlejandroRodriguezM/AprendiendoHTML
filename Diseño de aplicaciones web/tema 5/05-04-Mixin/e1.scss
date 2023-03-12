@@ -1,0 +1,68 @@
+// Por Alejandro Rodriguez Mena
+// Ejercicio 1. Prueba los ejemplos de Mixins.
+
+$azulado: #165BFF;
+@mixin link_chulo{
+color: $azulado;
+text-decoration: none;&:hover{
+color: lighten($azulado, 20);
+}
+}
+.content {a {
+@include link_chulo;
+}
+}
+
+
+
+// Ejercicio 2. Modificalo para crear tu propio @mixin borde_redondeado_decolor
+@mixin borde_redondeado_decolor($radio, $color) {
+    border-radius: $radio;
+    border: 1px solid $color;
+  }
+  
+  .elemento {
+    @include borde_redondeado_decolor(10px, #f00);
+  }
+  
+
+
+//   Ejercicio 3. Prueba los ejemplos de @content
+// ejemplo 2
+$azulado: #165BFF;
+@mixin link_chulo{
+color: $azulado;
+text-decoration: none;&:hover{
+color: lighten($azulado, 20);
+}
+}
+.content {a {
+@include link_chulo;
+}
+}
+
+
+
+// Ejercicio 4. Prueba los ejemplos de Interpolación.
+$posicion_borde: left;
+@mixin coche($marca, $color){
+.coche.#{$marca}{
+border-#{$posicion_borde}: 2px;
+background-color: $color;
+background-image: url('images/#{$marca}-#{$color}.jpg')
+}
+}
+@include coche('audi', 'green');
+
+
+// Ejercicio 5. Modificalo para crear tu propio @mixin que se le pase la imagen la carpeta y 
+// los ponga de fondo.
+$posicion_borde: left;
+@mixin zapato($marca, $color){
+.zapato.#{$marca}{
+border-#{$posicion_borde}: 1px;
+background-color: $color;
+background-image: url('images/#{$marca}-#{$color}.jpg')
+}
+}
+@include zapato('geox', 'black');

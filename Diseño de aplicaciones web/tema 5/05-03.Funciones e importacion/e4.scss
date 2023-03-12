@@ -1,0 +1,5 @@
+/*Por Alejandro Rodriguez Mena - Ejercicio 4 - Crea un ejemplo de Scss que use alguna de las funciones de strings de scss*/
+$string:hola;
+.clase1::after {
+    content: quote($string)
+}

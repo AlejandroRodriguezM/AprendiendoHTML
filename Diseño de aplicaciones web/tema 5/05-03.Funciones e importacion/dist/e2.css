@@ -1,0 +1,19 @@
+/*Por Alejandro Rodriguez Mena - Ejercicio 2 - Crea un scss con variables y 5 clases cuyo propiedad width sea una variable con valor 100 + 10 cada uno*/
+.menu {
+  width: 100px;
+}
+.menu .clase1 {
+  width: 110px;
+}
+.menu .clase {
+  width: 120px;
+}
+.menu .clase3 {
+  width: 130px;
+}
+.menu .clase4 {
+  width: 140px;
+}
+.menu .clase5 {
+  width: 150px;
+}

@@ -1,0 +1,104 @@
+p {
+    color: blue;
+}
+
+h4 {
+    background-color: yellow !important;
+}
+
+div h1 {
+    background-color: blueviolet;
+}
+
+div {
+    width: 500px;
+}
+
+div.uno {
+    border: 1px solid black;
+    margin: auto;
+}
+
+div.dos {
+    border: 2px solid red;
+    margin: 50px 0 0 auto;
+}
+
+div.tres {
+    border: 3px dashed red;
+    background-color: rgb(100, 152, 152);
+    margin: 50px 0;
+}
+
+div.cuatro {
+    border: 4px ridge aqua;
+    background-color: rgb(100, 152, 152);
+    margin-left: 100px;
+}
+
+div.seis {
+    border: 6px dotted red;
+    background-color: blue;
+    padding: 20px;
+}
+
+div.siete {
+    border: 7px dotted black;
+    background-color: #ccc;
+    padding: 40px 100px;
+
+}
+
+div.ocho {
+    border: 8px;
+    border-style: outset;
+    border-color: red yellow darkred olive;
+    background-color: #ffffff;
+    color: #0000FF;
+    padding: 10 20 30 40px;
+}
+
+div.nueve {
+    border: 7px;
+    border-style: inset;
+    border-color: #FfFF00 #FF00fF #00fFff forestgreen;
+    background-color: #ffffff;
+    color: #0000FF;
+}
+
+div.diez {
+    border: 10px;
+    border-style: groove;
+    border-color: aqua red blue lime;
+    background-color: #ffffff;
+    color: #0000FF;
+}
+
+table,
+td {
+    border: 1px solid black;
+}
+
+
+@media print {
+    body {
+        font-size: 10pt;
+    }
+
+    /* Establece el tamaño de fuente para impresión */
+}
+
+@media screen {
+    body {
+        color: blue
+    }
+
+    /* Establece el tamaño de fuente para visualización */
+}
+
+/* @media movil */
+@media screen and (max-width: 480px) {
+    p {
+        color: red;
+    }
+}

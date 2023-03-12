@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Exercise</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    div[class^='col-']{
+      border: 5px solid white;
+    }
+
+    /* Estilos para tablet (sm) y teléfono (xs) */
+    @media (max-width: 768px) {
+      /* Cambio de color de fondo */
+      .green-bg {
+        background-color: cyan;
+      }
+      .red-bg {
+        background-color: red;
+      }
+      .yellow-bg {
+        background-color: yellow;
+      }
+      /* Alineación de texto */
+      .text-left-sm {
+        text-align: left;
+      }
+      .text-right-sm {
+        text-align: center;
+      }
+      /* Tamaño de fuente */
+      .font-large-sm {
+        font-size: 2rem;
+      }
+      /* Cambio de estilo para las columnas */
+      .col-sm-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+      .col-sm-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+
+    /* Estilos para pantallas medianas (md) y grandes (lg y xl) */
+    @media (min-width: 768px) {
+      /* Cambio de color de fondo */
+      .green-bg {
+        background-color: greenyellow;
+      }
+      .red-bg {
+        background-color: red;
+      }
+      .yellow-bg {
+        background-color: yellow;
+      }
+      /* Alineación de texto */
+      .text-left-md {
+        text-align: left;
+      }
+      .text-right-md {
+        text-align: right;
+      }
+      /* Tamaño de fuente */
+      .font-large-md {
+        font-size: 4rem;
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="w-100"></div>
+    <div class="row">
+      <div class="col-md-12 col-lg-4 col-xl-4 bg-success text-left text-md-center">
+        <h1>Header</h1>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xl-4 bg-danger text-center text-md-left">
+        <h1>1</h1>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xl-4 bg-danger text-center text-md-left">
+        <h1>2</h1>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xl-4 bg-danger text-center text-md-left">
+        <h1>3</h1>
+      </div>
+      <div class="col-sm-6 bg-warning text-right">
+        <h1>Footer 1</h1>
+      </div>
+      <div class="col-sm-6 bg-warning text-left">
+        <h1>Footer 2</h1>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

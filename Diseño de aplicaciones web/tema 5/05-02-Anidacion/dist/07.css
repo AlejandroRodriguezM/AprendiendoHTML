@@ -1,0 +1,12 @@
+/*Por Alejandro Rodriguez Mena - Ejercicio 7 - Crea un scss que genere este css con variables para las propiedades */
+.clase1,
+.clase2,
+.clase3,
+.clase4,
+.clase5,
+.clase6,
+.clase7,
+.clase8 {
+  border-width: 10 px;
+  border-color: #fea;
+}

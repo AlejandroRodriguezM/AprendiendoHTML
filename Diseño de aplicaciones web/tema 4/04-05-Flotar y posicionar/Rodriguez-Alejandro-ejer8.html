@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Flotar</title>
+  <style>
+    #caja71 {
+      width: 100px;
+      height: 100px;
+      background-color: #FFFF00;
+      border: solid 1px black;
+      margin: 10px;
+      position: relative;
+      left: 20;
+      top: 20;
+    }
+
+    #caja72 {
+      width: 130px;
+      height: 130px;
+      background-color: #00FFFF;
+      border: solid 1px black;
+      margin: 10px;
+      position: relative;
+      left: 20;
+      top: 20;
+    }
+
+    #caja73 {
+      width: 160px;
+      height: 160px;
+      background-color: #FF00FF;
+      border: solid 1px black;
+      margin: 10px;
+      position: relative;
+      left: 20;
+      top: 20;
+    }
+
+
+    #caja81 {
+      width: 100px;
+      height: 100px;
+      background-color: #FFFF00;
+      border: solid 1px black;
+      margin: 10px;
+      position: relative;
+      left: 20px;
+      top: 20px;
+    }
+
+    #caja82 {
+      width: 130px;
+      height: 130px;
+      background-color: #00FFFF;
+      border: solid 1px black;
+      margin: 10px;
+      position: relative;
+      left: 123px;
+      top: 10px;
+    }
+
+    #caja83 {
+      width: 160px;
+      height: 160px;
+      background-color: #FF00FF;
+      border: solid 1px black;
+      margin: 10px;
+      position: relative;
+      left: 254px;
+      top: 0px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="contenido">
+    <script>
+      var valortop = 50;
+      function moverarriba() {
+        document.getElementById("caja71").style.top = '20px';
+        document.getElementById("caja72").style.top = '10px';
+        document.getElementById("caja73").style.top = '0px';
+        document.getElementById("caja71").style.left = '20px';
+        document.getElementById("caja72").style.left = '123px';
+        document.getElementById("caja73").style.left = '254px';
+      }
+      function moverabajo() {
+        document.getElementById("caja71").style.top = '0px';
+        document.getElementById("caja72").style.top = '0px';
+        document.getElementById("caja73").style.top = '0px';
+        document.getElementById("caja71").style.left = '0px';
+        document.getElementById("caja72").style.left = '0px';
+        document.getElementById("caja73").style.left = '0px';
+      }
+    </script>
+
+    <div id="caja71" onclick="moverarriba()" ondblclick="moverabajo()"> Caja 71 </div>
+    <div id="caja72" onclick="moverarriba()" ondblclick="moverabajo()"> Caja 72 </div>
+    <div id="caja73" onclick="moverarriba()" ondblclick="moverabajo()"> Caja 73 </div>
+  </div>
+</body>
+</html>

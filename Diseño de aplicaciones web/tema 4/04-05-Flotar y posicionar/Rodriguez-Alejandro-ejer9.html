@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Flotar</title>
+  <style>
+    #caja91 {
+      width: 100px;
+      height: 100px;
+      background-color: #FFAAAA;
+      border: solid 1px black;
+      margin: 10px;
+      position: relative;
+      left: 0px;
+      top: 0px;
+      z-index: 2;
+    }
+
+    #caja92 {
+      width: 130px;
+      height: 130px;
+      background-color: #AAAAFF;
+      border: solid 1px black;
+      margin: 10px;
+      position: relative;
+      left: 0px;
+      top: 0px;
+      z-index: 1;
+    }
+
+    #caja93 {
+      width: 160px;
+      height: 160px;
+      background-color: #AAFFAA;
+      border: solid 1px black;
+      margin: 10px;
+      position: relative;
+      left: 0px;
+      top: 0px;
+      z-index: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="contenido">
+    <script>
+      var estado = 0;
+      function moverz() {
+        if (estado == 0) {
+          document.getElementById("caja91").style.left = '0px';
+          document.getElementById("caja91").style.top = '0px';
+          document.getElementById("caja92").style.left = '10px';
+          document.getElementById("caja92").style.top = '-100px';
+          document.getElementById("caja93").style.left = '20px';
+          document.getElementById("caja93").style.top = '-230px';
+          estado = 1;
+        } else {
+          document.getElementById("caja91").style.top = '0px';
+          document.getElementById("caja91").style.left = '0px';
+          document.getElementById("caja92").style.top = '0px';
+          document.getElementById("caja92").style.left = '0px';
+          document.getElementById("caja93").style.top = '0px';
+          document.getElementById("caja93").style.left = '0px';
+          estado = 0;
+        }
+        // estado=(estado+1)%2;
+      }
+    </script>
+
+    <div id="caja91" onclick="moverz()"> Caja 91 </div>
+    <div id="caja92" onclick="moverz()"> Caja 92 </div>
+    <div id="caja93" onclick="moverz()"> Caja 93 </div>
+  </div>
+</body>
+</html>

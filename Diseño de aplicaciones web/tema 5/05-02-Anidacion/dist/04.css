@@ -1,0 +1,16 @@
+/*Por Alejandro Rodriguez Mena - Ejercicio 4 - Crea un scss que genere este css con hijos */
+/*.clase2>div {
+    border: 1px;
+    border-color: green;
+}
+
+.clase2>.clase21>.clase211> {
+    color: red;
+}*/
+.clase2 > div {
+  border: 1px;
+  border-color: green;
+}
+.clase2 > .clase21 > .clase211 > {
+  color: red;
+}

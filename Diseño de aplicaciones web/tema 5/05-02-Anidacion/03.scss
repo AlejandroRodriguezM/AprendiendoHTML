@@ -1,0 +1,55 @@
+/*Por Alejandro Rodriguez Mena - Ejercicio 3 - Crea un scss que genere este css (Debes fijarte que clase1 es el padre de todas las clases clases1x) */
+
+/*.clase1 .clase11 {
+    color: red;
+}
+
+.clase1 .clase12 {
+    color: green;
+}
+
+.clase1 .clase12 .clase122 {
+    color: olive;
+}
+
+.clase1 .clase12 .clase123 {
+    color: brown;
+}
+
+.clase1 .clase13 {
+    color: brown;
+}
+
+.clase2 .clase21 .clase211 {
+    color: red;
+}*/
+
+.clase1 {
+    .clase11 {
+        color: red;
+    }
+
+    .clase12 {
+        color: green;
+
+        .clase122 {
+            color: olive;
+        }
+
+        .clase123 {
+            color: brown;
+        }
+    }
+
+    .clase13 {
+        color: brown;
+    }
+}
+
+.clase2 {
+    .clase21 {
+        .clase211 {
+            color: red;
+        }
+    }
+}

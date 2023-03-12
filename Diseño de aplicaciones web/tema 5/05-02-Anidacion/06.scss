@@ -1,0 +1,21 @@
+/*Por Alejandro Rodriguez Mena - Ejercicio 6 - Prueba los ejemplos de variables */
+
+$color_link: blue;
+$default_border: 1px solid black;
+$std_margin: 5px;
+
+a {
+    color: $color_link;
+    border: $default_border;
+    margin: $std_margin 0px $std_margin 0px;
+}
+
+p {
+    a {
+        color: $color_link;
+        $var_local: green;
+                          &.link {
+             color: $var_local;
+        }
+     }
+}

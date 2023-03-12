@@ -1,0 +1,19 @@
+/*Por Alejandro Rodriguez Mena - Ejercicio 2 - Crea un scss que anide cinco niveles con etiquetas como p, div, h1, b y span */
+#content {
+  border: 1px solid black;
+}
+#content p {
+  color: #fff;
+}
+#content p div {
+  color: blue;
+}
+#content p div h1 {
+  color: red;
+}
+#content p div h1 b {
+  color: yellow;
+}
+#content p div h1 b span {
+  color: green;
+}

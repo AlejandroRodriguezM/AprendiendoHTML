@@ -1,0 +1,153 @@
+/*Por Alejandro Rodriguez Mena - Ejercicio 1 - Prueba los ejemplos de anidación */
+
+/*Ejemplo anidacion*/
+#content {
+    border: 1px solid black;
+
+    p.info {
+        color: #fff;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+/* anidar propiedades */
+.bordemolon {
+    border: {
+        style: solid;
+
+        left: {
+            width: 4px;
+            color: #888;
+        }
+
+        right: {
+            width: 2px;
+            color: #ccc;
+        }
+    }
+}
+
+/* Hijo directo */
+.blog> {
+    .post {
+        width: 800px;
+
+        >.title {
+            font-weight: bold;
+        }
+    }
+
+    .comments {
+        margin-left: 20px;
+    }
+}
+
+/* cocatenar */
+.blog {
+    .post p {
+        em {
+            border: #fff;
+            color: #fff;
+        }
+    }
+}
+
+/* v. 1: & implícito */
+.blog {
+    .post p {
+        em {
+            color: #fff;
+        }
+    }
+}
+
+/* v. 2: & explícito */
+.blog {
+    & .post p {
+        & em {
+            color: #fff;
+        }
+    }
+}
+
+/* Insertar .blog entre .post y p */
+.blog {
+    .post & p {
+        em {
+            color: #fff;
+        }
+    }
+}
+
+/* Insertar el padre al final */
+.blog {
+    .post p {
+        em & {
+            color: #fff;
+        }
+    }
+}
+
+
+/* Pseudoclase :hover en p */
+.blog {
+    .post p {
+        &:hover em {
+            color: #fff;
+        }
+    }
+}
+
+/*Prefijar variables con $*/
+$color_link: blue;
+$default_border: 1px solid black;
+$std_margin: 5px;
+
+a {
+    color: $color_link;
+    border: $default_border;
+    margin: $std_margin 0px $std_margin 0px;
+}
+
+
+/*Variables globales y locales*/
+$color_link: blue;
+
+p {
+    a {
+        color: $color_link;
+        $var_local: white;
+
+        &.link {
+            color: $var_local;
+        }
+    }
+}
+
+/* color: $var_local;*/
+
+/* CSS Generado */
+p a {
+    color: blue;
+}
+
+p a.link {
+    color: white;
+}
+
+/*Variables !default como un requere one*/
+$color_link: blue !default;
+
+p {
+    a {
+        color: $color_link;
+        $var_local: white;
+
+        &.link {
+            color: $var_local;
+        }
+    }
+}

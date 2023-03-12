@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Osos</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- logo -->
+    <a class="navbar-brand" href="../index.html">
+      <img src="../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo">Mi pagina de animales
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="zorros.html">Zorros</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="osos.html">Osos</a>
+        </li>
+      </ul>
+      <form class="form-inline ml-auto">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Sección de fichas o pestañas -->
+  <div class="container mt-4">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#pestana1" data-toggle="tab">Imagen</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#pestana2" data-toggle="tab">Tabla</a>
+      </li>
+    </ul>
+    <div class="tab-content mt-3">
+      <div class="tab-pane fade show active" id="pestana1">
+        <h3>Osos</h3>
+        <!-- insertar imagen centrada -->
+        <div class="text-center">
+          <img src="../img/oso.jpg" alt="perro" class="img-fluid">
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pestana2">
+        <h3>Tabla</h3>
+        <div class="container">
+          <div class="container">
+            <table class="table table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Propiedad</th>
+                  <th scope="col">Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tamaño</td>
+                  <td>Pequeño a grande</td>
+                </tr>
+                <tr>
+                  <td>Especie</td>
+                  <td>Ursidae</td>
+                </tr>
+                <tr>
+                  <td>Peso</td>
+                  <td>40 a 600 kg</td>
+                </tr>
+                <tr>
+                  <td>Pelo</td>
+                  <td>Grueso y abundante</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3" style="background-color: rgba(207, 104, 104, 0.2)">
+      © 2023 - Esto es un footer
+    </div>
+  </footer>
+
+  <!-- JavaScript de Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+/*Por Alejandro Rodriguez Mena - Ejercicio 5 - Crea un ejemplo de Scss que use la directiva @import donde se importen una clase con 10 variaciones del color rojo*/
+.class1 {
+  color: red;
+}
+
+.class2 {
+  color: #f03232;
+}
+
+.class3 {
+  color: #db7373;
+}

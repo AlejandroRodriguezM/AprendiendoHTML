@@ -1,0 +1,193 @@
+/* Ejercicio 2 */
+
+* {
+    color: gray;
+}
+
+/* Crea una regla para que los elementos que estén dentro de un p sean de color verde y fuente
+Georgia. (con descendientes ) */
+
+p em {
+    color: green;
+    font-family: Georgia;
+}
+
+/* Crea una regla para que todos los elementos que estén dentro de una tabla tengan bordes
+rojos y amarillos (con descendientes ) */
+
+table td {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    border-bottom: 1px solid yellow;
+    border-top: 1px solid yellow;
+}
+
+/* Crea una regla para que todos los elementos que estén inmediatamente dentro de un p sean
+de color azul y fuente Arial. (con hijo > ) */
+
+p>i {
+    color: blue;
+    font-family: Arial;
+}
+
+/* Crea una regla para que todos elementos strong deben tener color azul, pero sólo si son
+descendientes de un elemento de lista (li). El resto de los elementos strong no se verán afectados. */
+
+li strong {
+    color: rgb(255, 0, 212);
+}
+
+/* 7. Crea una regla para que todos enlaces dentro de un div y de una etiqueta debe tener color
+magenta (con descendiente + selector * )
+<div > hola </div> --> no magenta
+<div > <p> hola </p> </div> --> SI magenta */
+
+div * a {
+    color: magenta;
+}
+
+/* Crea una regla para que todos enlaces que se hallan empezando un div no tengan
+subrayado (con descendiente hijo + selector * ) div>a:first-child { text-decoration:none}
+<div > <a href=""> NO </a> </div> --> no subrayado
+<div > <p> hola</p> <a href=""> SI </a> </div> --> SI subrayado */
+
+div>a:first-child {
+    text-decoration: none;
+}
+
+/* Crea una regla para que todos strong que se hallan justo dentro un h1 tengan subrayado
+(con descendiente hijo ) h1>strong { text-decoration:underline}
+< h1 > <div> <strong> no es nada </strong> <div> </h1> --> NO subrayado
+< h1 > <strong> no es nada </strong> </h1> --> SI subrayado */
+
+h1>strong {
+    text-decoration: underline;
+}
+
+/* Crea una regla para que todos p que van junto con un h3 sean rojos (con
+selectores adyacentes-hermanos ) */
+
+h3+p {
+    color: red;
+}
+
+/* Crea una regla para que el elemento con el identificador ejercicio10 sean rojos (#ejercicio10) */
+
+#ejercicio10 {
+    color: red;
+}
+
+/* Crea una regla para que los elementos con la clase ejercicio11 sean Azul (.ejercicio11) */
+
+.ejercicio11 {
+    color: blue;
+}
+
+/* Crea dos reglas para que los elementos con la clase ejercicio12 sean Azules excepto los h2 que deben ser verdes y los h3 que deben ser amarillos */
+
+.ejercicio12 {
+    color: blue;
+}
+
+.ejercicio12 h2 {
+    color: green;
+}
+
+.ejercicio12 h3 {
+    color: yellow;
+}
+
+/* Crea una regla de pseudoclase para que los enlaces con clase ejercicio13 tengan
+estos colores
+• Verde si todavía no ha sido visitado
+• Verde Oliva si ha sido visitado
+• Rojo mientras el ratón pasa por encima
+• Azul justo cuando se pulsa el ratón sobre
+• Escribe dentro del párrafo un memotecnico para el concepto Orden Pseudoclase = LVHA */
+
+a.ejercicio13:link {
+    color: green;
+}
+
+a.ejercicio13:visited {
+    color: rgb(128, 128, 0);
+}
+
+a.ejercicio13:hover {
+    color: red;
+}
+
+a.ejercicio13:active {
+    color: blue;
+}
+
+/* Crea dos regla para que los elementos con la clase ejercicio14
+• Regla 1 : que todos los p sean Azules con la clave !important
+• Regla 2 : que los elementos con la clase ejercicio14 de p sean verdes */
+
+.ejercicio14 p {
+    color: blue !important;
+}
+
+.ejercicio14 p {
+    color: green;
+}
+
+/* Crea dos regla para que los elementos con la clase ejercicio15
+• Regla 1 : que todos los p sean Azules con la clave !important
+• Regla 2 : que todos los p sean Negros en css en linea */
+
+.ejercicio15 p {
+    color: blue !important;
+}
+
+/* Crea cuatro reglas para que los elementos p con la clase ejercicio16
+• Regla 1 : que la su primera línea de todos los p sean Azules
+• Regla 2 : que la su primera letra de todos los p sean rojas y tamaño 15
+• Regla 3 : que los elementos que siguen al texto hola dentro de un p sean verde
+• Regla 4 : que los elementos que siguen al texto adios dentro de un p sean Amarillo
+Debes usar (:first-line) (:first-letter) (:before) (:after). */
+
+.ejercicio16 p:first-line {
+    color: blue;
+}
+
+.ejercicio16 p:first-letter {
+    color: red;
+    font-size: 15px;
+}
+
+.ejercicio16 p:before {
+    content: "hola";
+    color: green;
+}
+
+.ejercicio16 p:after {
+    content: "adios";
+    color: yellow;
+}
+
+/* Crea una regla con :focus hace referencia a los elementos que tienen el foco de un formulario se iluminen . Un ejemplo sería: input:focus {background-color: yellow;}. Crea un formulario con 5 input text
+para observarlo. */
+
+input:focus {
+    background-color: yellow;
+}
+
+/* Crea una regla con :first-child hace referencia el primer hijo de un elemento padre.
+
+En el siguiente ejemplo se aplica el estilo al primer elemento de una lista desordenada: ul li:first-child {font-weight: bold;}
+
+Aplica el anterior estilo a una lista con 5 elementos */
+
+ul li:first-child {
+    font-weight: bold;
+}
+
+/* :lang(idioma) hace referencia al idioma en el que está un determinado elemento.
+En el siguiente ejemplo se aplica el estilo a cualquier párrafo que esté escrito en inglés: p:lang(en)
+{color: red} */
+
+p:lang(en) {
+    color: red;
+}

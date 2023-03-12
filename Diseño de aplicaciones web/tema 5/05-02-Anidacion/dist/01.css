@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/*Por Alejandro Rodriguez Mena - Ejercicio 1 */
+
+/*Ejemplo anidacion*/
+#content {
+  border: 1px solid black;
+}
+#content p.info {
+  color: #fff;
+}
+#content p.info a {
+  text-decoration: none;
+}
+
+/* anidar propiedades */
+.bordemolon {
+  border-style: solid;
+  border-left-width: 4px;
+  border-left-color: #888;
+  border-right-width: 2px;
+  border-right-color: #ccc;
+}
+
+/* Hijo directo */
+.blog > .post {
+  width: 800px;
+}
+.blog > .post > .title {
+  font-weight: bold;
+}
+.blog > .comments {
+  margin-left: 20px;
+}
+
+/* cocatenar */
+.blog .post p em {
+  border: #fff;
+  color: #fff;
+}
+
+/* v. 1: & implícito */
+.blog .post p em {
+  color: #fff;
+}
+
+/* v. 2: & explícito */
+.blog .post p em {
+  color: #fff;
+}
+
+/* Insertar .blog entre .post y p */
+.post .blog p em {
+  color: #fff;
+}
+
+/* Insertar el padre al final */
+em .blog .post p {
+  color: #fff;
+}
+
+/* Pseudoclase :hover en p */
+.blog .post p:hover em {
+  color: #fff;
+}
+
+/*Prefijar variables con $*/
+a {
+  color: blue;
+  border: 1px solid black;
+  margin: 5px 0px 5px 0px;
+}
+
+/*Variables globales y locales*/
+p a {
+  color: blue;
+}
+p a.link {
+  color: white;
+}
+
+/* color: $var_local;*/
+/* CSS Generado */
+p a {
+  color: blue;
+}
+
+p a.link {
+  color: white;
+}
+
+/*Variables !default como un requere one*/
+p a {
+  color: blue;
+}
+p a.link {
+  color: white;
+}

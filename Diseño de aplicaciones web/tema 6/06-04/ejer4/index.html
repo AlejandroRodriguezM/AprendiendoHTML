@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mi página sobre animales</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo">Mi pagina de animales
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="enlaces/zorros.html">Zorros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="enlaces/osos.html">Osos</a>
+        </li>
+      </ul>
+      <form class="form-inline ml-auto">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Sección de fichas o pestañas -->
+  <div class="container mt-4">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#pestana1" data-toggle="tab">Presentación</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#pestana2" data-toggle="tab">Formulario</a>
+      </li>
+    </ul>
+    <div class="tab-content mt-3">
+      <div class="tab-pane fade show active" id="pestana1">
+        <h3>¡Hola!</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec velit dui. Nam faucibus, augue at dictum aliquet, nibh nisi vehicula eros, in laoreet sapien tortor eget augue. Fusce fringilla libero at tristique feugiat. Donec auctor lacus eget augue fermentum venenatis.
+
+        </p>
+      </div>
+      <div class="tab-pane fade" id="pestana2">
+        <h3>¿Qué animal es el mejor?</h3>
+        <div class="container">
+          <form class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" class="form-control" id="nombre" required>
+              <div class="invalid-feedback">
+                Ingresa un nombre válido.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" required>
+              <div class="invalid-feedback">
+                Ingresa un email válido.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="ciudad">Ciudad:</label>
+              <select class="form-control" id="ciudad" required>
+                <option value=""></option>
+                <option value="mlg">Malaga</option>
+                <option value="grd">Granada</option>
+                <option value="svll">Sevilla</option>
+                <option value="madr">Madrid</option>
+                <option value="bcn">Barcelona</option>
+                <option value="val">Valencia</option>
+                <option value="bilb">Bilbao</option>
+                <option value="vigo">Vigo</option>
+              </select>
+              <div class="invalid-feedback">
+                Selecciona una ciudad.
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3" style="background-color: rgba(207, 104, 104, 0.2)">
+      © 2023 - Esto es un footer
+    </div>
+  </footer>
+
+  <!-- JavaScript de Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

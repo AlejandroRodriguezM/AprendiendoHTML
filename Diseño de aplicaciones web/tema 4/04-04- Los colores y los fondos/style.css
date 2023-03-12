@@ -1,0 +1,25 @@
+/* Crea 4 reglas CSS para mostrar divs con las diferentes maneras de expresar los colores con
+background-color */
+div.ejercicio1 {
+    background-color: #ff0000;
+    width: 50px;
+    float: left;
+}
+
+div.ejercicio2 {
+    background-color: rgb(0, 255, 0);
+    width: 50px;
+    float: left;
+}
+
+div.ejercicio3 {
+    background-color: rgba(0, 0, 255, 0.5);
+    width: 50px;
+    float: left;
+}
+
+div.ejercicio4 {
+    background-color: hsl(150, 100%, 50%);
+    width: 50px;
+    float: left;
+}
