@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- Por Alejandro Rodriguez Mena -->
+
+<html>
+
+<head>
+	<title>Bootstrap Page</title>
+	<!-- Link to Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<style>
+		div[class^='col-'] {
+			border: 5px solid white;
+		}
+
+		/* Media query para pantallas más pequeñas */
+		@media (max-width: 576px) {
+
+			/* Cambiar el orden de las columnas */
+			.col-12.col-md-6.text-right.bg-warning {
+				order: 2;
+			}
+
+			.col-12.col-md-6.text-left.bg-warning {
+				order: 1;
+			}
+		}
+
+		/* cuando el tamaño sea sm o más grande, el orden de las columnas columna 1 y 2 en una fila y columna 3 en otra fila */
+		@media (min-width: 576px) {
+			.col-12.col-md-6.text-right.bg-warning {
+				order: 1;
+			}
+
+			.col-12.col-md-6.text-left.bg-warning {
+				order: 2;
+			}
+
+			.col-12.col-md-4.bg-danger {
+				order: 3;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<!-- Header -->
+			<div class="col-12 col-md-12 bg-success">
+				<h1 class="display-1">Header</h1>
+			</div>
+		</div>
+		<div class="row justify-content-center text-center">
+
+			<div class="col-12 col-md-4 bg-danger">
+				<h1 class="display-1">1</h1>
+			</div>
+
+			<div class="col-12 col-md-4 bg-danger">
+				<h1 class="display-1">2</h1>
+			</div>
+
+			<div class="col-12 col-md-4 bg-danger">
+				<h1 class="display-1">3</h1>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+
+			<div class="col-12 col-md-6 text-right bg-warning">
+				<h1 class="display-1">Footer 1</h1>
+			</div>
+
+			<div class="col-12 col-md-6 text-left bg-warning">
+				<h1 class="display-1">Footer 2</h1>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

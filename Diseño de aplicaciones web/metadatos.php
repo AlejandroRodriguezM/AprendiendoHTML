@@ -32,6 +32,6 @@ function copiarArchivos($rutaOrigen, $rutaDestino) {
 
 
 // Llamar a la función para copiar los archivos de la carpeta especificada
-copiarArchivos('./tema5', './copia');
+copiarArchivos('./Tema9', './copia');
 
 ?>

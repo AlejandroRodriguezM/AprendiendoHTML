@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^user/(\w+)/(\w+)?$ ej2.php?id=$1&color=$2
